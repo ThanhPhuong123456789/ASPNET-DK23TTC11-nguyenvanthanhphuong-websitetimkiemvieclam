@@ -1,0 +1,144 @@
+﻿.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-left {
+    width: 50%;
+    padding-left: 32px;
+    padding-right: 100px;
+}
+
+    .box-left .title {
+        margin-top: 24px;
+    }
+
+    .box-input {
+        border: 1px solid #EEE;
+        border-radius: 4px;
+    }
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+    .form-group > p {
+        margin-bottom: 4px;
+        width: 100%;
+    }
+
+    .form-group > span {
+        font-size: 14px;
+    }
+
+.box-input > i {
+    color: #4CA6A8;
+    font-size: 16px;
+    margin:0 12px;
+}
+
+.form-control {
+    max-width: 100%;
+    font-size: 13px;
+    color: #373737;
+    background-color: #FFF !important;
+    border: none !important;
+    padding: 0;
+}
+
+    .form-control:focus {
+        box-shadow: none;
+    }
+
+.box-left .title > h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.box-left .title > p {
+    font-size: 13px;
+}
+
+.validation-summary-errors > ul {
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+    .validation-summary-errors > ul > li {
+        font-size: 13px;
+        color: #f00;
+    }
+
+.box-btn {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.box-right {
+    width: 50%;
+    padding-right: 32px;
+}
+
+.box-author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+    .box-author > p {
+        margin: 0;
+    }
+
+.authors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+    .btn-signin:hover {
+        background: #373737 !important;
+    }
+
+.box-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.box-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0;
+}
+
+    .box-signup > p {
+        margin: 0;
+        padding-right: 8px;
+        font-size: 14px;
+    }
+
+.box-options a {
+    color: #03c988;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.box-support {
+    padding-top: 12px;
+    border-top: 1px solid #f2f2f2;
+}
+
+    .box-support > p {
+        margin: 0;
+        font-weight: 500;
+    }
+
+    .box-support > p, .box-support > span {
+        font-size: 13px;
+    }

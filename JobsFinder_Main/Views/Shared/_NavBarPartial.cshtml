@@ -1,0 +1,74 @@
+﻿
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <div class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+        <img class="nav-logo" src="~/Assets/Client/JobsFinder/img/Logo.png" alt="JobsFinder">
+        <div class="nav-text">
+            <a href="/Home">Jobs</a>
+            <a href="/Home">Finder</a>
+        </div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        @{ Html.RenderAction("MainMenu", "Home"); }
+        @{
+            var session = (JobsFinder_Main.Common.UserLogin)Session[JobsFinder_Main.Common.CommonConstants.USER_SESSION];
+        }
+        @if (session != null)
+        {
+            <div class="navbar-nav d-flex nav-button align-items-center">
+                <img class=" mx-2" src="@session.Avatar" style="width: 32px; height: 32px; border-radius: 16px; border: 1px solid #EEE;" />
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="text-transform: capitalize;">@session.Name</a>
+                    <div class="dropdown-menu rounded-0 m-0">
+                        <div class="item-drop d-flex align-items-center">
+                            <i class="bi bi-person-check"></i>
+                            @Html.ActionLink("Quản lý tài khoản", "Manager", "User")
+                        </div>
+                        <hr class="m-2">
+                        <div class="item-drop d-flex align-items-center">
+                            <i class="bi bi-heart"></i>
+                            @Html.ActionLink("Yêu thích", "Favorite", "User")
+                        </div>
+                        <hr class="m-2">
+                        <div class="item-drop d-flex align-items-center">
+                            <i class="bi bi-building"></i>
+                            @Html.ActionLink("Quản lý doanh nghiệp", "Manager", "User")
+                        </div>
+                        <hr class="m-2">
+                        <div class="item-drop d-flex align-items-center">
+                            <i class="bi bi-door-closed"></i>
+                            @Html.ActionLink("Đăng xuất", "Logout", "User")
+                        </div>
+                        <style>
+                            .item-drop > a {
+                                width: max-content;
+                                font-size: 15px;
+                                font-weight: 500;
+                            }
+
+                            .item-drop .bi {
+                                font-size: 16px !important;
+                                font-weight: 600;
+                                padding: 4px;
+                                margin-right: 8px;
+                            }
+
+                            .navbar .dropdown-menu {
+                                left: -100px;
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="navbar-nav d-flex nav-button">
+                <a href="/dang-nhap" class="btn btn-primary mx-2" style="height: 40px; width: 150px; border-radius: 4px;">Đăng nhập</a>
+                <a href="/dang-ky" class="btn btn-secondary" style="height: 40px; width: 150px; border-radius: 4px;">Đăng ký</a>
+            </div>
+        }
+    </div>
+</nav>
+<!-- Navbar End -->

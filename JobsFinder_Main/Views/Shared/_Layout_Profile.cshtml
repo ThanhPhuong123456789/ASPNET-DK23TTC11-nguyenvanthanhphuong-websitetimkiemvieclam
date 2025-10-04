@@ -1,0 +1,796 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JobsFinder - Job Portal Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="~/Assets/Client/JobsFinder/img/Logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imbue:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Imbue:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- JobsFinder -->
+    <link href="~/Assets/Client/JobsFinder/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="~/Assets/Client/JobsFinder/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Blog -->
+    <link rel="stylesheet" href="~/Assets/Client/Blog/plugins/themify-icons/themify-icons.css">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="~/Assets/Client/JobsFinder/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Blog Stylesheet -->
+    <link rel="stylesheet" href="~/Assets/Client/Blog/css/style.css" media="screen">
+
+    <!-- JobsFinder Stylesheet -->
+    <link href="~/Assets/Client/JobsFinder/css/style.css" rel="stylesheet">
+
+    <!-- Login & Register Stylesheet -->
+    <link href="~/Assets/Client/Login/User.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+        @Html.Partial("_NavBarPartial")
+        @Html.Partial("_PoupNofication")
+
+        @{
+            var session = (JobsFinder_Main.Common.UserLogin)Session[JobsFinder_Main.Common.CommonConstants.USER_SESSION];
+        }
+        @if (session != null)
+        {
+            var dao = new Model.DAO.CompanyDao();
+            var model = dao.ListInUser(session.UserName).ToList();
+
+            <section style="background-color: #eee;">
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card mb-4 box-card">
+                                <div class="card mb-4 mb-lg-0 p-4 d-flex flex-row" style="background-color: #FFF">
+                                    <div>
+                                        <p style="font-size: 17px; font-weight: 700; color: rgba(6, 24, 44)" class="mb-2">Cập nhật thông tin cá nhân</p>
+                                        <p class="mb-2">Tăng khả năng tìm kiếm và khớp việc làm phù hợp với bạn.</p>
+                                        <button id="btnShowFormProfile" class="btn btn-primary btn-show-form" data-form="formProfile" style="border-radius: 4px; font-size: 13px; text-transform: capitalize;">Cập nhật ngay</button>
+                                    </div>
+                                    <div>
+                                        <img class="image-content" src="~/Assets/Client/JobsFinder/img/HoSo.png" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4 box-card">
+                                @{
+                                    var hocVanDao = new Model.DAO.HocVanDao();
+                                    var listHocVan = hocVanDao.ListAll(session.UserID).ToList();
+                                }
+                                @if (listHocVan.Count == 0)
+                                {
+                                    <div class="card mb-4 mb-lg-0 p-4 d-flex flex-row" style="background-color: #FFF">
+                                        <div>
+                                            <p style="font-size: 17px; font-weight: 700; color: rgba(6, 24, 44)" class="mb-2">Học vấn</p>
+                                            <p class="mb-2">Giúp nhà tuyển dụng có cái nhìn toàn diện về khả năng học tập và kiến thức chuyên môn của bạn.</p>
+                                            <button class="btn btn-outline-primary btn-show-form" data-form="formHocVan" style="border-radius: 4px; font-size: 13px; text-transform: capitalize;">Thêm mục</button>
+                                        </div>
+                                        <div>
+                                            <img class="image-content" src="~/Assets/Client/JobsFinder/img/HocVan.png" />
+                                        </div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    foreach (var hocVan in listHocVan)
+                                    {
+                                        <div class="card mb-4 mb-lg-0 p-4 d-flex flex-row" style="background-color: #FFF; width: 100%; border-bottom: 1px solid #ccc;">
+                                            <div style="margin-right: 24px;">
+                                                <i class="bi bi-book-half" style="font-size: 18px;"></i>
+                                            </div>
+                                            <div style="width: 100%; margin-right: 12px;">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="m-0">@hocVan.ChuyenNganh</p>
+                                                </div>
+                                                <p class="m-0" style="font-weight: 600; font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 280px;">@hocVan.Truong</p>
+                                                <div class="d-flex flex-row">
+                                                    <p class="m-0">@hocVan.NamBatDau</p>
+                                                    <span> - </span>
+                                                    <p class="m-0">@hocVan.NamKetThuc</p>
+                                                </div>
+                                            </div>
+                                            <div class="profile-butons d-flex flex-column justify-content-between align-items-center">
+                                                <a href="#" class="btn-edit btn-show-form" data-form="formUpdateHocVan@(hocVan.ID)"><i class="bi bi-pencil-square"></i></a>
+                                                <a href="#" class="btn-delete btn-show-form" data-form="formDeleteHocVan@(hocVan.ID)"><i class="bi bi-trash"></i></a>
+                                            </div>
+                                        </div>
+                                    }
+                                    <button class="btn btn-primary btn-show-form" data-form="formHocVan" style="border-radius: 0px; font-size: 13px; text-transform: capitalize;">Thêm mục học vấn</button>
+                                }
+                            </div>
+
+                            <div class="card mb-4 box-card">
+                                @{
+                                    var kinhNghiemDao = new Model.DAO.KinhNghiemDao();
+                                    var listKinhNghiem = kinhNghiemDao.ListAll(session.UserID).ToList();
+                                }
+                                @if (listKinhNghiem.Count == 0)
+                                {
+                                    <div class="card mb-4 mb-lg-0 p-4 d-flex flex-row" style="background-color: #FFF">
+                                        <div>
+                                            <p style="font-size: 17px; font-weight: 700; color: rgba(6, 24, 44)" class="mb-2">Kinh nghiệm</p>
+                                            <p class="mb-2">Giúp nhà tuyển dụng có cái nhìn tổng quan, đánh giá về quá trình làm việc của bạn.</p>
+                                            <button class="btn btn-outline-primary btn-show-form" data-form="formKinhNghiem" style="border-radius: 4px; font-size: 13px; text-transform: capitalize;">Thêm mục</button>
+                                        </div>
+                                        <div>
+                                            <img class="image-content" src="~/Assets/Client/JobsFinder/img/KinhNghiem.png" />
+                                        </div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    foreach (var kinhNghiem in listKinhNghiem)
+                                    {
+                                        <div class="card mb-4 mb-lg-0 p-4 d-flex flex-row" style="background-color: #FFF; width: 100%; border-bottom: 1px solid #ccc;">
+                                            <div style="margin-right: 24px;">
+                                                <i class="bi bi-book-half" style="font-size: 18px;"></i>
+                                            </div>
+                                            <div style="width: 100%; margin-right: 12px;">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="m-0">@kinhNghiem.ChucVu</p>
+                                                </div>
+                                                <p class="m-0" style="font-weight: 600; font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 280px;">@kinhNghiem.CongTy</p>
+                                                <div class="d-flex flex-row">
+                                                    <p class="m-0">@kinhNghiem.NamBatDau</p>
+                                                    <span> - </span>
+                                                    <p class="m-0">@kinhNghiem.NamKetThuc</p>
+                                                </div>
+                                            </div>
+                                            <div class="profile-butons d-flex flex-column justify-content-between align-items-center">
+                                                <a href="#" class="btn-edit btn-show-form" data-form="formUpdateKinhNghiem@(kinhNghiem.ID)"><i class="bi bi-pencil-square"></i></a>
+                                                <a href="#" class="btn-delete btn-show-form" data-form="formDeleteKinhNghiem@(kinhNghiem.ID)"><i class="bi bi-trash"></i></a>
+                                            </div>
+                                        </div>
+                                    }
+                                    <button class="btn btn-primary btn-show-form" data-form="formKinhNghiem" style="border-radius: 0px; font-size: 13px; text-transform: capitalize;">Thêm mục kinh nghiệm</button>
+                                }
+                            </div>
+
+                            <div class="card mb-4 box-card">
+                                @{
+                                    var kyNangDao = new Model.DAO.KyNangDao();
+                                    var listKyNang = kyNangDao.ListAll(session.UserID).ToList();
+                                }
+                                @if (listKyNang.Count == 0)
+                                {
+                                    <div class="card mb-4 mb-lg-0 p-4 d-flex flex-row" style="background-color: #FFF">
+                                        <div>
+                                            <p style="font-size: 17px; font-weight: 700; color: rgba(6, 24, 44)" class="mb-2">Kỹ năng</p>
+                                            <p class="mb-2">Mô tả kỹ các kỹ năng bạn có giúp người khác hiểu được điểm mạnh của bạn và giúp gia tăng cơ hội kết nối với người khác.</p>
+                                            <button class="btn btn-outline-primary btn-show-form" data-form="formKyNang" style="border-radius: 4px; font-size: 13px; text-transform: capitalize;">Thêm mục</button>
+                                        </div>
+                                        <div>
+                                            <img class="image-content" src="~/Assets/Client/JobsFinder/img/KyNang.png" />
+                                        </div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    foreach (var kyNang in listKyNang)
+                                    {
+                                        <div class="card mb-4 mb-lg-0 p-4 d-flex flex-row" style="background-color: #FFF; width: 100%; border-bottom: 1px solid #ccc;">
+                                            <div style="margin-right: 24px;">
+                                                <i class="bi bi-book-half" style="font-size: 18px;"></i>
+                                            </div>
+                                            <div style="width: 100%; margin-right: 12px;">
+                                                @*<div class="d-flex justify-content-between">
+                                                        <p class="m-0">@kyNang.ChucVu</p>
+                                                    </div>*@
+                                                <p class="m-0" style="font-weight: 600; font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 280px;">@kyNang.TenKyNang</p>
+                                                <div class="d-flex flex-row">
+                                                    <p class="m-0">@kyNang.DanhGia</p>
+                                                    @*<span> - </span>
+                                                        <p class="m-0">@kyNang.NamKetThuc</p>*@
+                                                </div>
+                                            </div>
+                                            <div class="profile-butons d-flex flex-column justify-content-between align-items-center">
+                                                <a href="#" class="btn-edit btn-show-form" data-form="formUpdateKyNang@(kyNang.ID)"><i class="bi bi-pencil-square"></i></a>
+                                                <a href="#" class="btn-delete btn-show-form" data-form="formDeleteKyNang@(kyNang.ID)"><i class="bi bi-trash"></i></a>
+                                            </div>
+                                        </div>
+                                    }
+                                    <button class="btn btn-primary btn-show-form" data-form="formKyNang" style="border-radius: 0px; font-size: 13px; text-transform: capitalize;">Thêm mục kỹ năng</button>
+                                }
+                            </div>
+
+                            <div class="card mb-4 box-card">
+                                @{
+                                    var chungChiDao = new Model.DAO.ChungChiDao();
+                                    var listChungChi = chungChiDao.ListAll(session.UserID).ToList();
+                                }
+                                @if (listChungChi.Count == 0)
+                                {
+                                    <div class="card mb-4 mb-lg-0 p-4 d-flex flex-row" style="background-color: #FFF">
+                                        <div>
+                                            <p style="font-size: 17px; font-weight: 700; color: rgba(6, 24, 44)" class="mb-2">Chứng chỉ</p>
+                                            <p class="mb-2">Tổng hợp kiến thức, kỹ năng và năng lực chuyên môn của bạn trong lĩnh vực tương ứng.</p>
+                                            <button class="btn btn-outline-primary btn-show-form" data-form="formChungChi" style="border-radius: 4px; font-size: 13px; text-transform: capitalize;">Thêm mục</button>
+                                        </div>
+                                        <div>
+                                            <img class="image-content" src="~/Assets/Client/JobsFinder/img/ChungChi.png" />
+                                        </div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    foreach (var chungChi in listChungChi)
+                                    {
+                                        <div class="card mb-4 mb-lg-0 p-4 d-flex flex-row" style="background-color: #FFF; width: 100%; border-bottom: 1px solid #ccc;">
+                                            <div style="margin-right: 24px;">
+                                                <i class="bi bi-book-half" style="font-size: 18px;"></i>
+                                            </div>
+                                            <div style="width: 100%; margin-right: 12px;">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="m-0">@chungChi.ToChuc</p>
+                                                </div>
+                                                <p class="m-0" style="font-weight: 600; font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 280px;">@chungChi.TenChungChi</p>
+                                                <div class="d-flex flex-row">
+                                                    <p class="m-0">@chungChi.ThangXacThuc</p>
+                                                    <span> - </span>
+                                                    <p class="m-0">@chungChi.NamXacThuc</p>
+                                                </div>
+                                            </div>
+                                            <div class="profile-butons d-flex flex-column justify-content-between align-items-center">
+                                                <a href="#" class="btn-edit btn-show-form" data-form="formUpdateChungChi@(chungChi.ID)"><i class="bi bi-pencil-square"></i></a>
+                                                <a href="#" class="btn-delete btn-show-form" data-form="formDeleteChungChi@(chungChi.ID)"><i class="bi bi-trash"></i></a>
+                                            </div>
+                                        </div>
+                                    }
+                                    <button class="btn btn-primary btn-show-form" data-form="formChungChi" style="border-radius: 0px; font-size: 13px; text-transform: capitalize;">Thêm mục chứng chỉ</button>
+                                }
+                            </div>
+
+                            <div class="card mb-4 box-card">
+                                @{
+                                    var giaiThuongDao = new Model.DAO.GiaiThuongDao();
+                                    var listGiaiThuong = giaiThuongDao.ListAll(session.UserID).ToList();
+                                }
+                                @if (listGiaiThuong.Count == 0)
+                                {
+                                    <div class="card mb-4 mb-lg-0 p-4 d-flex flex-row" style="background-color: #FFF">
+                                        <div>
+                                            <p style="font-size: 17px; font-weight: 700; color: rgba(6, 24, 44)" class="mb-2">Giải thưởng</p>
+                                            <p class="mb-2">Bạn có thể thêm những thành tựu đáng chú ý mà bạn đã đạt được trong quá trình làm việc, học tập, v.v...</p>
+                                            <button class="btn btn-outline-primary btn-show-form" data-form="formGiaiThuong" style="border-radius: 4px; font-size: 13px; text-transform: capitalize;">Thêm mục</button>
+                                        </div>
+                                        <div>
+                                            <img class="image-content" src="~/Assets/Client/JobsFinder/img/GiaiThuong.png" />
+                                        </div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    foreach (var giaiThuong in listGiaiThuong)
+                                    {
+                                        <div class="card mb-4 mb-lg-0 p-4 d-flex flex-row" style="background-color: #FFF; width: 100%; border-bottom: 1px solid #ccc;">
+                                            <div style="margin-right: 24px;">
+                                                <i class="bi bi-book-half" style="font-size: 18px;"></i>
+                                            </div>
+                                            <div style="width: 100%; margin-right: 12px;">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="m-0">@giaiThuong.ToChuc</p>
+                                                </div>
+                                                <p class="m-0" style="font-weight: 600; font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 280px;">@giaiThuong.TenGiaiThuong</p>
+                                                <div class="d-flex flex-row">
+                                                    <p class="m-0">@giaiThuong.ThangNhan</p>
+                                                    <span> - </span>
+                                                    <p class="m-0">@giaiThuong.NamNhan</p>
+                                                </div>
+                                            </div>
+                                            <div class="profile-butons d-flex flex-column justify-content-between align-items-center">
+                                                <a href="#" class="btn-edit btn-show-form" data-form="formUpdateGiaiThuong@(giaiThuong.ID)"><i class="bi bi-pencil-square"></i></a>
+                                                <a href="#" class="btn-delete btn-show-form" data-form="formDeleteGiaiThuong@(giaiThuong.ID)"><i class="bi bi-trash"></i></a>
+                                            </div>
+                                        </div>
+                                    }
+                                    <button class="btn btn-primary btn-show-form" data-form="formGiaiThuong" style="border-radius: 0px; font-size: 13px; text-transform: capitalize;">Thêm mục giải thưởng</button>
+                                }
+                            </div>
+
+                            <div class="card mb-4 box-card">
+                                @{
+                                    var khoaHocDao = new Model.DAO.KhoaHocDao();
+                                    var listKhoaHoc = khoaHocDao.ListAll(session.UserID).ToList();
+                                }
+                                @if (listKhoaHoc.Count == 0)
+                                {
+                                    <div class="card mb-4 mb-lg-0 p-4 d-flex flex-row" style="background-color: #FFF">
+                                        <div>
+                                            <p style="font-size: 17px; font-weight: 700; color: rgba(6, 24, 44)" class="mb-2">Khóa học</p>
+                                            <p class="mb-2">Bạn có thể thêm những khóa học đã và đang học, chúng sẽ giúp hồ sơ của bạn đầy đủ hơn.</p>
+                                            <button class="btn btn-outline-primary btn-show-form" data-form="formKhoaHoc" style="border-radius: 4px; font-size: 13px; text-transform: capitalize;">Thêm mục</button>
+                                        </div>
+                                        <div>
+                                            <img class="image-content" src="~/Assets/Client/JobsFinder/img/KhaoHoc.png" />
+                                        </div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    foreach (var khoaHoc in listKhoaHoc)
+                                    {
+                                        <div class="card mb-4 mb-lg-0 p-4 d-flex flex-row" style="background-color: #FFF; width: 100%; border-bottom: 1px solid #ccc;">
+                                            <div style="margin-right: 24px;">
+                                                <i class="bi bi-book-half" style="font-size: 18px;"></i>
+                                            </div>
+                                            <div style="width: 100%; margin-right: 12px;">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="m-0">@khoaHoc.ToChuc</p>
+                                                </div>
+                                                <p class="m-0" style="font-weight: 600; font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 280px;">@khoaHoc.TenKhoaHoc</p>
+                                                <div class="d-flex flex-row">
+                                                    <p class="m-0">@khoaHoc.NamBatDau</p>
+                                                    <span> - </span>
+                                                    <p class="m-0">@khoaHoc.NamKetThuc</p>
+                                                </div>
+                                            </div>
+                                            <div class="profile-butons d-flex flex-column justify-content-between align-items-center">
+                                                <a href="#" class="btn-edit btn-show-form" data-form="formUpdateKhoaHoc@(khoaHoc.ID)"><i class="bi bi-pencil-square"></i></a>
+                                                <a href="#" class="btn-delete btn-show-form" data-form="formDeleteKhoaHoc@(khoaHoc.ID)"><i class="bi bi-trash"></i></a>
+                                            </div>
+                                        </div>
+                                    }
+                                    <button class="btn btn-primary btn-show-form" data-form="formKhoaHoc" style="border-radius: 0px; font-size: 13px; text-transform: capitalize;">Thêm mục khóa học</button>
+                                }
+                            </div>
+
+                            <div class="card mb-4 box-card">
+                                @{
+                                    var duAnDao = new Model.DAO.DuAnDao();
+                                    var listDuAn = duAnDao.ListAll(session.UserID).ToList();
+                                }
+                                @if (listDuAn.Count == 0)
+                                {
+                                    <div class="card mb-4 mb-lg-0 p-4 d-flex flex-row" style="background-color: #FFF">
+                                        <div>
+                                            <p style="font-size: 17px; font-weight: 700; color: rgba(6, 24, 44)" class="mb-2">Dự án</p>
+                                            <p class="mb-2">Liệt kê các dự án cá nhân, nhóm bạn đã làm, đã tham gia giúp nhà tuyển dụng tin tưởng vào trình độ, khả năng chuyên môn của bạn hơn.</p>
+                                            <button class="btn btn-outline-primary btn-show-form" data-form="formDuAn" style="border-radius: 4px; font-size: 13px; text-transform: capitalize;">Thêm mục</button>
+                                        </div>
+                                        <div>
+                                            <img class="image-content" src="~/Assets/Client/JobsFinder/img/DuAn.png" />
+                                        </div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    foreach (var duAn in listDuAn)
+                                    {
+                                        <div class="card mb-4 mb-lg-0 p-4 d-flex flex-row" style="background-color: #FFF; width: 100%; border-bottom: 1px solid #ccc;">
+                                            <div style="margin-right: 24px;">
+                                                <i class="bi bi-book-half" style="font-size: 18px;"></i>
+                                            </div>
+                                            <div style="width: 100%; margin-right: 12px;">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="m-0">@duAn.ViTri</p>
+                                                </div>
+                                                <p class="m-0" style="font-weight: 600; font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 280px;">@duAn.TenDuAn</p>
+                                                <div class="d-flex flex-row">
+                                                    <p class="m-0">@duAn.NamBatDau</p>
+                                                    <span> - </span>
+                                                    <p class="m-0">@duAn.NamKetThuc</p>
+                                                </div>
+                                            </div>
+                                            <div class="profile-butons d-flex flex-column justify-content-between align-items-center">
+                                                <a href="#" class="btn-edit btn-show-form" data-form="formUpdateDuAn@(duAn.ID)"><i class="bi bi-pencil-square"></i></a>
+                                                <a href="#" class="btn-delete btn-show-form" data-form="formDeleteDuAn@(duAn.ID)"><i class="bi bi-trash"></i></a>
+                                            </div>
+                                        </div>
+                                    }
+                                    <button class="btn btn-primary btn-show-form" data-form="formDuAn" style="border-radius: 0px; font-size: 13px; text-transform: capitalize;">Thêm mục dự án</button>
+                                }
+                            </div>
+
+                            <div class="card mb-4 box-card">
+                                @{
+                                    var sanPhamDao = new Model.DAO.SanPhamDao();
+                                    var listSanPham = sanPhamDao.ListAll(session.UserID).ToList();
+                                }
+                                @if (listSanPham.Count == 0)
+                                {
+                                    <div class="card mb-4 mb-lg-0 p-4 d-flex flex-row" style="background-color: #FFF">
+                                        <div>
+                                            <p style="font-size: 17px; font-weight: 700; color: rgba(6, 24, 44)" class="mb-2">Sản phẩm</p>
+                                            <p class="mb-2">Tăng độ thuyết phục về khả năng, kỹ năng với các sản phẩm mà bạn đã làm.</p>
+                                            <button class="btn btn-outline-primary btn-show-form" data-form="formSanPham" style="border-radius: 4px; font-size: 13px; text-transform: capitalize;">Thêm mục</button>
+                                        </div>
+                                        <div>
+                                            <img class="image-content" src="~/Assets/Client/JobsFinder/img/SanPham.png" />
+                                        </div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    foreach (var sanPham in listSanPham)
+                                    {
+                                        <div class="card mb-4 mb-lg-0 p-4 d-flex flex-row" style="background-color: #FFF; width: 100%; border-bottom: 1px solid #ccc;">
+                                            <div style="margin-right: 24px;">
+                                                <i class="bi bi-book-half" style="font-size: 18px;"></i>
+                                            </div>
+                                            <div style="width: 100%; margin-right: 12px;">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="m-0">@sanPham.TheLoai</p>
+                                                </div>
+                                                <p class="m-0" style="font-weight: 600; font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 280px;">@sanPham.TenSanPham</p>
+                                                <div class="d-flex flex-row">
+                                                    <p class="m-0">@sanPham.ThangHoanThanh</p>
+                                                    <span> - </span>
+                                                    <p class="m-0">@sanPham.NamHoanThanh</p>
+                                                </div>
+                                            </div>
+                                            <div class="profile-butons d-flex flex-column justify-content-between align-items-center">
+                                                <a href="#" class="btn-edit btn-show-form" data-form="formUpdateSanPham@(sanPham.ID)"><i class="bi bi-pencil-square"></i></a>
+                                                <a href="#" class="btn-delete btn-show-form" data-form="formDeleteSanPham@(sanPham.ID)"><i class="bi bi-trash"></i></a>
+                                            </div>
+                                        </div>
+                                    }
+                                    <button class="btn btn-primary btn-show-form" data-form="formSanPham" style="border-radius: 0px; font-size: 13px; text-transform: capitalize;">Thêm mục sản phẩm</button>
+                                }
+                            </div>
+
+                            <div class="card mb-4 box-card">
+                                @{
+                                    var hoatDongDao = new Model.DAO.HoatDongDao();
+                                    var listHoatDong = hoatDongDao.ListAll(session.UserID).ToList();
+                                }
+                                @if (listHoatDong.Count == 0)
+                                {
+                                    <div class="card mb-4 mb-lg-0 p-4 d-flex flex-row" style="background-color: #FFF">
+                                        <div>
+                                            <p style="font-size: 17px; font-weight: 700; color: rgba(6, 24, 44)" class="mb-2">Hoạt động xã hội & tình nguyện</p>
+                                            <p class="mb-2">Hoạt động xã hội & tình nguyện cũng là một nội dung khá quan trọng trong hồ sơ của bạn.</p>
+                                            <button class="btn btn-outline-primary btn-show-form" data-form="formHoatDong" style="border-radius: 4px; font-size: 13px; text-transform: capitalize;">Thêm mục</button>
+                                        </div>
+                                        <div>
+                                            <img class="image-content" src="~/Assets/Client/JobsFinder/img/HoatDong.png" />
+                                        </div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    foreach (var hoatDong in listHoatDong)
+                                    {
+                                        <div class="card mb-4 mb-lg-0 p-4 d-flex flex-row" style="background-color: #FFF; width: 100%; border-bottom: 1px solid #ccc;">
+                                            <div style="margin-right: 24px;">
+                                                <i class="bi bi-book-half" style="font-size: 18px;"></i>
+                                            </div>
+                                            <div style="width: 100%; margin-right: 12px;">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="m-0">@hoatDong.ViTriThamGia</p>
+                                                </div>
+                                                <p class="m-0" style="font-weight: 600; font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 280px;">@hoatDong.TenHoatDong</p>
+                                                <div class="d-flex flex-row">
+                                                    <p class="m-0">@hoatDong.NamThamGia</p>
+                                                    <span> - </span>
+                                                    <p class="m-0">@hoatDong.NamKetThuc</p>
+                                                </div>
+                                            </div>
+                                            <div class="profile-butons d-flex flex-column justify-content-between align-items-center">
+                                                <a href="#" class="btn-edit btn-show-form" data-form="formUpdateHoatDong@(hoatDong.ID)"><i class="bi bi-pencil-square"></i></a>
+                                                <a href="#" class="btn-delete btn-show-form" data-form="formDeleteHoatDong@(hoatDong.ID)"><i class="bi bi-trash"></i></a>
+                                            </div>
+                                            <style>
+                                            </style>
+                                        </div>
+                                    }
+                                    <button class="btn btn-primary btn-show-form" data-form="formHoatDong" style="border-radius: 0px; font-size: 13px; text-transform: capitalize;">Thêm mục hoạt động</button>
+                                }
+                            </div>
+
+                            <style>
+                                .box-card {
+                                    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset !important;
+                                }
+
+                                    .box-card:hover {
+                                        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px !important;
+                                    }
+
+                                    .box-card card:hover {
+                                        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset !important;
+                                    }
+
+                                .image-content {
+                                    width: 120px;
+                                    height: 120px;
+                                    object-fit: cover;
+                                }
+
+                                .profile-butons a {
+                                    border: none;
+                                    border-radius: 4px;
+                                    padding: 4px 8px;
+                                }
+
+                                .profile-butons .btn-edit {
+                                    background-color: #f17841;
+                                }
+
+                                .profile-butons .btn-delete {
+                                    background-color: #ff5d54;
+                                }
+
+                                .profile-butons a i {
+                                    color: #fff;
+                                }
+
+                                .profile-butons a:hover {
+                                    opacity: 0.7;
+                                }
+                            </style>
+                        </div>
+                        <div class="col-lg-8 p-4" style="background-color: #FFF;">
+                            @Html.Partial("CVProfile")
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="overlay"></div>
+
+            <div id="form-input" style="height:0px;">
+                @RenderBody()
+            </div>
+
+            <style>
+                #form-input {
+                    position: absolute;
+                    top: 0%;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: -1000;
+                }
+
+                .show-form-input {
+                    z-index: 1200 !important;
+                }
+
+                .form-profile {
+                    background-color: #fff;
+                    margin: 30px auto;
+                    width: 900px;
+                    border-radius: 4px;
+                    display: none;
+                }
+
+                .show-form-profile {
+                    display: block !important;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                }
+
+                #overlay {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    z-index: 1100;
+                    display: none;
+                    overflow: hidden;
+                }
+
+                .show-overlay {
+                    display: block !important;
+                }
+
+                .form-profile .form-group .form-control {
+                    height: 40px;
+                    font-size: 13px;
+                    border: 1px solid rgba(0,0,0,.1) !important;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                    min-width: 200px;
+                }
+
+                .form-profile .label-title {
+                    font-weight: 700;
+                }
+
+                textarea {
+                    min-height: 100px !important;
+                }
+
+                .disabled-field {
+                    opacity: 0 !important;
+                    pointer-events: none;
+                }
+            </style>
+
+        }
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Company</h5>
+                        <a style="border: none;" class="btn btn-link text-white-50" href="">About Us</a>
+                        <a style="border: none;" class="btn btn-link text-white-50" href="">Contact Us</a>
+                        <a style="border: none;" class="btn btn-link text-white-50" href="">Our Services</a>
+                        <a style="border: none;" class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a style="border: none;" class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Quick Links</h5>
+                        <a style="border: none;" class="btn btn-link text-white-50" href="">About Us</a>
+                        <a style="border: none;" class="btn btn-link text-white-50" href="">Contact Us</a>
+                        <a style="border: none;" class="btn btn-link text-white-50" href="">Our Services</a>
+                        <a style="border: none;" class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a style="border: none;" class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Contact</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Location, City, Country</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a style="border: none;" class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a style="border: none;" class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a style="border: none;" class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a style="border: none;" class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="https://freewebsitecode.com">Your Site Name</a>, All Right Reserved.
+
+
+                            Designed By <a class="border-bottom" href="https://freewebsitecode.com">Free Website Code</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="~/Assets/Admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="~/Assets/Admin/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Assets/Client/JobsFinder/lib/wow/wow.min.js"></script>
+    <script src="~/Assets/Client/JobsFinder/lib/easing/easing.min.js"></script>
+    <script src="~/Assets/Client/JobsFinder/lib/waypoints/waypoints.min.js"></script>
+    <script src="~/Assets/Client/JobsFinder/lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- ckFinder -->
+    <script src="~/Assets/Admin/js/plugins/ckfinder/ckfinder.js"></script>
+    <!-- ckEditor -->
+    <script src="~/Assets/Admin/js/plugins/ckeditor/ckeditor.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="~/Assets/Admin/js/sb-admin-2.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+
+    <script src="~/Assets/Client/Blog/plugins/instafeed/instafeed.min.js"></script>
+
+    <!-- Blog Script -->
+    <script src="~/Assets/Client/Blog/js/script.js"></script>
+
+    <!-- JobsFinder Script -->
+    <script src="~/Assets/Client/JobsFinder/js/main.js"></script>
+    <script>
+        function showPopup(message, type, messageType) {
+            var contentPopup = document.getElementById('contentPopup');
+            var boxtype = document.getElementById('type');
+            var boxmessage = document.getElementById('message');
+            var boxicon = document.getElementById('iconPopup');
+            var popup = document.getElementById('popup');
+            console.log(boxicon)
+
+            popup.style.display = 'block';
+            boxtype.innerHTML = type;
+            boxmessage.innerHTML = message;
+            contentPopup.classList.add(messageType);
+
+            if (messageType == "success") {
+                boxicon.innerHTML = '<i class="bi bi-check-circle-fill justify-content-center align-items-center iconPopup" style="width: 32px; height: 32px; font-size: 24px; margin-right: 16px;"></i>';
+            } else if (messageType == "error") {
+                boxicon.innerHTML = '<i class="bi bi-x-circle-fill justify-content-center align-items-center iconPopup" style="width: 32px; height: 32px; font-size: 24px; margin-right: 16px;"></i>'
+            } else if (message == "warning") {
+                boxicon.innerHTML = '<i class="bi bi-exclamation-triangle-fill justify-content-center align-items-center iconPopup" style="width: 32px; height: 32px; font-size: 24px; margin-right: 16px;"></i>'
+            }
+
+            setTimeout(function () {
+                popup.style.display = 'none';
+                for (var i = 0; i < boxicon.length; i++) {
+                    boxicon[i].remove(messageType);
+                    boxicon[i].style.display = "none";
+                }
+                contentPopup.classList.remove(messageType);
+            }, 4000);
+        }
+
+        var message = "@TempData["Message"]";
+        var messageType = "@TempData["MessageType"]";
+        var type = "@TempData["Type"]";
+        if (message !== '') {
+            showPopup(message, type, messageType);
+        }
+    </script>
+    <script src="~/Assets/Client/JobsFinder/js/showForm.js"></script>
+
+    @RenderSection("jsFooter", required: false)
+    <script>
+        $('#btnChooseImage').on('click', function (e) {
+            var finder = new CKFinder();
+            e.preventDefault();
+            finder.selectActionFunction = function (url) {
+                $('#chooseImage').val(url);
+            };
+            finder.popup();
+        })
+        $('#btnChooseImage_1').on('click', function (e) {
+            var finder = new CKFinder();
+            e.preventDefault();
+            finder.selectActionFunction = function (url) {
+                $('#chooseImage').val(url);
+            };
+            finder.popup();
+        })
+    </script>
+
+</body>
+</html>

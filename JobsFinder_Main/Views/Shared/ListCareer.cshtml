@@ -1,0 +1,31 @@
+﻿@model List<Model.EF.Career>
+
+@{
+    var rowCount = (int)Math.Ceiling((double)Model.Count / 4);
+    var colCount = 4;
+    var index = 0;
+}
+
+@for (var row = 0; row < rowCount; row++)
+{
+    <div class="row">
+        @for (var col = 0; col < colCount; col++)
+        {
+            if (index < Model.Count)
+            {
+                var career = Model[index];
+                <div class="col-md-3">
+                    <div class="row-item">
+                        <a href="#" class="category-title" style="width: max-content">@career.Name</a>
+                        @{
+                            var jobDao = new Model.DAO.JobDao();
+                            var count = jobDao.ListAll().Count(j => j.CarrerID == career.ID);
+                        }
+                        <span href="#" class="category-count" style="width: max-content;">@count Công việc</span>
+                    </div>
+                </div>
+            }
+            index++;
+        }
+    </div>
+}

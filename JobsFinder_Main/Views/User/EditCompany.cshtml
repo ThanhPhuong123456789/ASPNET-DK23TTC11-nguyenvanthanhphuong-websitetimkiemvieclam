@@ -1,0 +1,166 @@
+﻿@model Model.EF.Company
+
+@{
+    ViewBag.Title = "CompanyManager";
+    Layout = "~/Views/Shared/_Layout_Manager.cshtml";
+}
+
+
+@{
+    var session = (JobsFinder_Main.Common.UserLogin)Session[JobsFinder_Main.Common.CommonConstants.USER_SESSION];
+}
+
+@section jsFooter{
+    <script>
+        $('.btnSelectAvatar').on('click', function (e) {
+            var finder = new CKFinder();
+            e.preventDefault();
+            finder.selectActionFunction = function (url) {
+                $('#txtAvatar').val(url);
+            };
+            finder.popup();
+        })
+
+        $('.btnSelectBackground').on('click', function (e) {
+            var finder = new CKFinder();
+            e.preventDefault();
+            finder.selectActionFunction = function (url) {
+                $('#txtBackground').val(url);
+            };
+            finder.popup();
+        })
+
+        var editor = CKEDITOR.replace("txtDescription", {
+            customConfig: '/Assets/Admin/js/plugins/ckeditor/config.js',
+        });
+
+        $("#addCompanyLink").click(function () {
+            $(".formAddCompany").css("display", "block");
+            $(".formEditCompany").css("display", "none");
+        });
+    </script>
+}
+
+@if (session != null)
+{
+    <div class="position-relative" style="height: 200px;">
+        <img style="height: 100px; width: 100%; object-fit: cover; border-radius: 4px; opacity: 0.7;" src="@Model.Background" />
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100px;border-radius: 4px ;background-color: rgba(0, 0, 0, 0.5);"></div>
+        <img style="width: 80px; height: 80px; border-radius: 40px; border: 1px solid #EEE; position: absolute; left: 20px; top: 70px;" src="@Model.Avatar" />
+        <h5 style="text-transform: uppercase; left: 120px; top: 112px;" class="position-absolute">@Model.Name</h5>
+        <p style="left: 120px; top: 130px;" class="position-absolute">@Model.LinkPage</p>
+    </div>
+    <h5 class="mb-3">Chỉnh sửa doanh nghiệp</h5>
+    using (Html.BeginForm("EditCompany", "User", FormMethod.Post, new { method = "post" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                <p>Tên công ty</p>
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>Ảnh đại diện</p>
+                <div class="col-md-10">
+                    <div class="d-flex align-items-center">
+                        @Html.TextBoxFor(model => model.Avatar, new { @class = "form-control txtImage", @id = "txtAvatar" })
+                        <a id="btnSelectAvatar" style="white-space: nowrap;" href="#">Tải lên hình ảnh</a>
+                    </div>
+
+                    @Html.ValidationMessageFor(model => model.Avatar, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>Ảnh bìa</p>
+                <div class="col-md-10">
+                    <div class="d-flex align-items-center">
+                        @Html.TextBoxFor(model => model.Background, new { @class = "form-control txtImage", @id = "txtBackground" })
+                        <a id="btnSelectBackground" style="white-space: nowrap;" href="#">Tải lên hình ảnh</a>
+                    </div>
+                    @Html.ValidationMessageFor(model => model.Background, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <p>Link trang web</p>
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.LinkPage, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.LinkPage, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>Số lượng nhân viên</p>
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.Employees, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Employees, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>Vị trí công ty</p>
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.Location, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Location, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>Giới thiệu công ty</p>
+                <div class="col-md-10">
+                    @Html.TextAreaFor(model => model.Description, new { @class = "form-control", @id = "txtDescription" })
+                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="d-flex flex-row-reverse">
+                <div class="form-group mx-3">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Hoàn tất" class="btn btn-outline-primary" style="border-radius: 4px; font-size: 14px; font-weight: 500; text-transform: inherit;" />
+                    </div>
+                </div>
+
+                <div class="form-group m-0 btn-delete">
+                    @Ajax.ActionLink("Xóa", "DeleteCompany", new { @id = Model.ID, @class = "btn btn-outline-primary" }, new AjaxOptions
+                       {
+                           Confirm = "Bạn có muốn xóa bản ghi này",
+                           OnComplete = "$(row_" + Model.ID + ").remove()",
+                           HttpMethod = "Delete"
+                       })
+                    <style>
+                        .btn-delete > a {
+                            border: 1px solid #FF0000;
+                            font-size: 14px;
+                            font-weight: 500;
+                            padding: 8px 22px;
+                            border-radius: 4px;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+    }
+    <style>
+        .form-control {
+            border-bottom: 1px solid #EEE !important;
+            font-size: 16px;
+        }
+
+        .col-md-10 {
+            width: 100%;
+        }
+    </style>
+}
+else
+{
+    { Html.RenderAction("Login", "User"); }
+}
+

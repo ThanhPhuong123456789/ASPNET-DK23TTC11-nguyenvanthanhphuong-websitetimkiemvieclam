@@ -1,0 +1,8 @@
+﻿@model List<Model.EF.Menu>
+
+<div class="navbar-nav p-4 p-lg-0 nav-btn">
+    @foreach (var item in Model)
+    {
+        <a href="@item.Link" class="nav-item nav-link" target="@item.Target">@item.Text</a>
+    }
+</div>

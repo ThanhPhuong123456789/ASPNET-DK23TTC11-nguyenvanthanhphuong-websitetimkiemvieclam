@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "CompanyManager";
+    Layout = "~/Views/Shared/_Layout_Manager.cshtml";
+}
+
+@{
+    var session = (JobsFinder_Main.Common.UserLogin)Session[JobsFinder_Main.Common.CommonConstants.USER_SESSION];
+}
+
+@if (session == null)
+{
+    { Html.RenderAction("Login", "User"); }
+}
+else
+{
+    var dao = new Model.DAO.CompanyDao();
+    var model = dao.ListInUser(session.UserName).ToList();
+
+    <h5 class="mb-3">Doanh nghiệp hiện có</h5>
+
+    if (model.Count != 0)
+    {
+        foreach (var item in model)
+        {
+            <div class="d-flex align-items-center">
+                <img class="avatar" src="@item.Avatar" alt="@item.Avatar" />
+                <a id="@item.ID" href="/User/EditCompany/@item.ID" style="font-size: 16px; font-weight: 600; text-transform: uppercase;">@item.Name</a>
+            </div>
+            <hr class="my-2" />
+        }
+    }
+    else
+    {
+        <p>Bạn chưa có doanh nghiệp nào</p>
+
+    }
+    <a href="/User/CompanyManager">Tạo đoanh nghiệp</a>
+    <style>
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            border: 1px solid #EEE;
+            margin-right: 12px;
+        }
+    </style>
+}

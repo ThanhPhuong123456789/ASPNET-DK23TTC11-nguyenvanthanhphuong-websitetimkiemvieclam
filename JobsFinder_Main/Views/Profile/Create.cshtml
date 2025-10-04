@@ -1,0 +1,153 @@
+﻿@model JobsFinder_Main.Models.ProfileModel
+
+@{
+    var session = (JobsFinder_Main.Common.UserLogin)Session[JobsFinder_Main.Common.CommonConstants.USER_SESSION];
+    var dao = new Model.DAO.ProfileDao();
+}
+
+@if (session != null)
+{
+    var myProfile = dao.GetByID(session.UserID);
+    <div id="formProfile" class="p-4 form-profile">
+        @using (Html.BeginForm("Create", "Profile", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <h5 class="m-0">Thông tin cá nhân</h5>
+                <hr class="my-3" />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group mb-4">
+                    <p class="label-title">Họ và tên</p>
+                    <div class="col-md-10" style="width: 100%;">
+                        @Html.TextBoxFor(model => model.HoVaTen, new { @class = "form-control", @placeholder = myProfile.HoVaTen })
+                        @Html.ValidationMessageFor(model => model.HoVaTen, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group mb-4">
+                    <p class="label-title">Ảnh cá nhân *</p>
+                    <div class="col-md-10" style="width: 100%;">
+                        <div class="d-flex align-items-center">
+                            @Html.TextBoxFor(model => model.AnhCaNhan, new { @class = "form-control", @placeholder = myProfile.AnhCaNhan, @id = "chooseImage" })
+                            <a class="btn btn-outline-primary" id="btnChooseImage" style="white-space: nowrap; border-radius: 4px; margin-left: 24px; font-size: 14px; font-weight: 400; text-transform: capitalize" href="#">Tải lên</a>
+                        </div>
+                        @Html.ValidationMessageFor(model => model.AnhCaNhan, "", new { @class = "text-danger" })
+                        <img id="anhCaNhan" class="my-2" style="object-fit: cover;width: 120px; height: 150px; box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset !important;" src="@myProfile.AnhCaNhan" />
+                    </div>
+                    <script>
+                        var inputAnhCaNhan = document.getElementById("chooseImage");
+                        var imgAnhCaNhan = document.getElementById("anhCaNhan");
+
+                        inputAnhCaNhan.addEventListener("input", function () {
+                            var imageUrl = inputAnhCaNhan.value;
+                            imgAnhCaNhan.src = imageUrl;
+                        });
+                    </script>
+                </div>
+
+                <div class="form-group mb-4">
+                    <p class="label-title">Giới tính *</p>
+                    <div class="col-md-10" style="width: 100%;">
+                        <label style="font-weight: 500; font-size: 13px;">
+                            @Html.RadioButtonFor(model => model.GioiTinh, "Nam", new { @class = "gender-radio" })
+                            Nam
+                        </label>
+                        <label class="mx-3" style="font-weight: 500; font-size: 13px;">
+                            @Html.RadioButtonFor(model => model.GioiTinh, "Nữ", new { @class = "gender-radio" })
+                            Nữ
+                        </label>
+                        <label class="mx-3" style="font-weight: 500; font-size: 14px;">
+                            @Html.RadioButtonFor(model => model.GioiTinh, "Khác", new { @class = "gender-radio" })
+                            Khác
+                        </label>
+                        @Html.ValidationMessageFor(model => model.GioiTinh, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <div class="form-group mb-4" style="margin-right: 16px;">
+                        <p class="label-title">Ngày sinh</p>
+                        <div class="col-md-10" style="width: 100%;">
+                            @Html.DropDownListFor(model => model.NgaySinh, Enumerable.Range(1, 31).Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }), myProfile.NgaySinh.ToString(), new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.NgaySinh, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-4" style="margin-right: 16px;">
+                        <p class="label-title">Tháng sinh</p>
+                        <div class="col-md-10" style="width: 100%;">
+                            @Html.DropDownListFor(model => model.ThangSinh, Enumerable.Range(1, 12).Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }), myProfile.ThangSinh.ToString(), new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.ThangSinh, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-4" style="margin-right: 16px;">
+                        <p class="label-title">Năm sinh</p>
+                        <div class="col-md-10" style="width: 100%;">
+                            <div class="col-md-10" style="width: 100%;">
+                                @{
+                                    int currentYear = DateTime.Now.Year;
+                                    int startYear = currentYear - 100;
+                                    List<SelectListItem> years = new List<SelectListItem>();
+                                    for (int year = currentYear; year >= startYear; year--)
+                                    {
+                                        years.Add(new SelectListItem { Value = year.ToString(), Text = year.ToString() });
+                                    }
+                                }
+                                @Html.DropDownListFor(model => model.NamSinh, years, myProfile.NamSinh.ToString(), new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.NamSinh, "", new { @class = "text-danger" })
+                            </div>
+
+                            @Html.ValidationMessageFor(model => model.NamSinh, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mb-4">
+                    <p class="label-title">Địa chỉ hiện tại</p>
+                    <div class="col-md-10" style="width: 100%;">
+                        @Html.TextBoxFor(model => model.DiaChiHienTai, new { @class = "form-control", @placeholder = myProfile.DiaChiHienTai })
+                        @Html.ValidationMessageFor(model => model.DiaChiHienTai, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <div class="form-group mb-4" style="width: 48%;">
+                        <p class="label-title">Email liên hệ</p>
+                        <div class="col-md-10" style="width: 100%;">
+                            @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @placeholder = myProfile.Email })
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-4" style="width: 48%;">
+                        <p class="label-title">Số điện thoại liên hệ</p>
+                        <div class="col-md-10" style="width: 100%;">
+                            @Html.TextBoxFor(model => model.SoDienThoai, new { @class = "form-control", @placeholder = myProfile.SoDienThoai })
+                            @Html.ValidationMessageFor(model => model.SoDienThoai, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mb-4">
+                    <p class="label-title">Giới thiệu bản thân</p>
+                    <div class="col-md-10" style="width: 100%;">
+                        @Html.TextAreaFor(model => model.GioiThieu, new { @class = "form-control pt-2", @placeholder = "Giới thiệu bản thân" })
+                        @Html.ValidationMessageFor(model => model.GioiThieu, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group mb-2">
+                    <div class="col-md-offset-2 col-md-10 d-flex justify-content-center" style="width: 100%">
+                        <input type="submit" value="Cập nhật" class="btn btn-primary" style="border-radius: 4px;" />
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    { Html.RenderAction("Login", "User"); }
+}

@@ -1,0 +1,129 @@
+﻿@model JobsFinder_Main.Models.KyNangModel
+
+@{
+    var session = (JobsFinder_Main.Common.UserLogin)Session[JobsFinder_Main.Common.CommonConstants.USER_SESSION];
+}
+
+@if (session != null)
+{
+<div id="formKyNang" class="p-4 form-profile">
+    @using (Html.BeginForm("Create", "KyNang", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h5 class="m-0">Kỹ năng</h5>
+            <hr class="my-3" />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="form-group mb-4">
+                <p class="label-title">Tên kỹ năng</p>
+                <div class="col-md-10" style="width: 100%;">
+                    @Html.TextBoxFor(model => model.TenKyNang, new { @class = "form-control", @placeholder = "Nhập tên kỹ năng" })
+                    @Html.ValidationMessageFor(model => model.TenKyNang, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group mb-4">
+                <p class="label-title">Đánh giá</p>
+                <div class="col-md-10" style="width: 100%;">
+                    @Html.TextBoxFor(model => model.DanhGia, new { @class = "form-control", @type ="hidden" })
+                    @Html.ValidationMessageFor(model => model.DanhGia, "", new { @class = "text-danger" })
+                </div>
+                <div class="box-rating d-flex flex-row">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                </div>
+                <p class="rating-caption" style="height: 26px;">Chọn số sao tương ứng với mức độ kỹ năng của bạn</p>
+            </div>
+
+            <style>
+                .box-rating i {
+                    font-size: 20px;
+                    padding: 4px;
+                    margin-right: 8px;
+                }
+                .box-rating i.bi-star-fill {
+                    color: gold;
+                }
+            </style>
+
+            <script>
+                var stars = document.querySelectorAll(".bi-star");
+                var inputDanhGia = document.getElementById("DanhGia");
+                var ratingCaption = document.querySelector(".rating-caption");
+
+                var captions = [
+                    "Chỉ mới nghe qua",
+                    "Chưa có sản phẩm hoàn chỉnh",
+                    "Có sản phẩm hoàn chỉnh",
+                    "Có sản phẩm hoàn chỉnh trên cùng một nhóm",
+                    "Thành thạo"
+                ];
+
+                stars.forEach(function (star, index) {
+                    star.addEventListener("click", function () {
+                        var rating = index + 1;
+                        inputDanhGia.value = rating;
+                        updateStars();
+                        ratingCaption.textContent = captions[rating - 1];
+                    });
+
+                    star.addEventListener("mouseover", function () {
+                        for (var i = 0; i <= index; i++) {
+                            stars[i].classList.remove("bi-star");
+                            stars[i].classList.add("bi-star-fill");
+                        }
+
+                        for (var j = index + 1; j < stars.length; j++) {
+                            stars[j].classList.add("bi-star");
+                            stars[j].classList.remove("bi-star-fill");
+                        }
+                        ratingCaption.textContent = captions[index];
+                    });
+
+                    star.addEventListener("mouseout", function () {
+                        updateStars();
+                        var rating = parseInt(inputDanhGia.value);
+                        ratingCaption.textContent = captions[rating - 1];
+                    });
+                });
+
+                function updateStars() {
+                    stars.forEach(function (star, index) {
+                        star.classList.remove("bi-star-fill");
+                        star.classList.add("bi-star");
+                    });
+
+                    var rating = parseInt(inputDanhGia.value);
+                    for (var i = 0; i < rating; i++) {
+                        stars[i].classList.remove("bi-star");
+                        stars[i].classList.add("bi-star-fill");
+                    }
+                }
+            </script>
+
+            <div class="form-group">
+                <p class="label-title">Mô tả</p>
+                <div class="col-md-10" style="width: 100%;">
+                    @Html.TextAreaFor(model => model.MoTaChiTiet, new { @class = "form-control pt-2", @placeholder = "Mô tả chi tiết" })
+                    @Html.ValidationMessageFor(model => model.MoTaChiTiet, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group mb-2">
+                <div class="col-md-offset-2 col-md-10 d-flex justify-content-center" style="width: 100%">
+                    <input type="submit" value="Hoàn tất" class="btn btn-primary" style="border-radius: 4px;" />
+                </div>
+            </div>
+        </div>
+    }
+</div>
+}
+else
+{
+    { Html.RenderAction("Login", "User"); }
+}

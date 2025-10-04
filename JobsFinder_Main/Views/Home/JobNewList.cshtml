@@ -1,0 +1,9 @@
+﻿
+@{
+    var jobs = ViewBag.NewJob as List<Model.EF.Job> ?? new List<Model.EF.Job>();
+}
+
+@foreach (var job in jobs)
+{
+    @Html.Partial("_JobItem_New_Home", job)
+}

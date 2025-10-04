@@ -1,0 +1,80 @@
+﻿@model Model.EF.User
+
+@section jsFooter{
+    <script>
+        $('#btnSelectImage').on('click', function (e) {
+            var finder = new CKFinder();
+            e.preventDefault();
+            finder.selectActionFunction = function (url) {
+                $('#txtImage').val(url);
+            };
+            finder.popup();
+        })
+    </script>
+}
+
+@using (Html.BeginForm("Update", "User", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            <p>Họ và tên</p>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <p>Mật khẩu</p>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Password, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <p>Số điện thoại</p>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Phone,  new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <p>Địa chỉ</p>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Address, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <p>Ảnh đại diện</p>
+            <div class="col-md-10">
+                <div class="d-flex align-items-center">
+                    @Html.TextBoxFor(model => model.Avatar, new { @class = "form-control txtImage", @id = "txtImage" })
+                    <a id="btnSelectImage" style="white-space: nowrap;" href="#">Tải lên hình ảnh</a>
+                </div>
+                @Html.ValidationMessageFor(model => model.Avatar, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Lưu thay đổi" class="btn btn-outline-primary" style="border-radius: 4px; font-size: 14px; font-weight: 500; text-transform: inherit;" />
+            </div>
+        </div>
+
+        <style>
+            .form-control {
+                border-bottom: 1px solid #EEE !important;
+                font-size: 16px;
+            }
+        </style>
+    </div>
+}
+

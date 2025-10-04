@@ -1,0 +1,82 @@
+﻿@model PagedList.IPagedList<Model.EF.Career>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Danh mục ngành nghề";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@section header  {
+    Danh mục ngành nghề
+}
+
+
+<!-- Topbar Search -->
+@using (Html.BeginForm("Index", "Career", FormMethod.Get, new { @class = "navbar-search" }))
+{
+    <div class="input-group">
+        <input type="text" class="form-control bg-white search-input" placeholder="Tìm kiếm ..."
+               aria-label="Search" aria-describedby="basic-addon2" name="searchString" value="@ViewBag.SearchString">
+        <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">
+                <i class="fas fa-search fa-sm"></i>
+            </button>
+        </div>
+        <a class="btn btn-primary ml-3" href="/Admin/Career/Create">
+            Thêm mới
+        </a>
+    </div>
+    <style>
+        .navbar-search {
+            max-width: 40%;
+            margin-bottom: 1rem;
+        }
+
+            .navbar-search > input {
+                border: 1px solid #d1d3e2;
+            }
+    </style>
+}
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Tên</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th>Tên</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr id="row_@item.ID">
+                            <td>@item.ID</td>
+                            <td>@item.Name</td>
+                            <td>
+                                <a href="/Admin/Career/Edit/@item.ID">Sửa</a>
+                                @Ajax.ActionLink("Xóa", "Delete", new { @id = item.ID }, new AjaxOptions
+                           {
+                               Confirm = "Bạn có muốn xóa bản ghi này",
+                               OnComplete = "$(row_" + @item.ID + ").remove()",
+                               HttpMethod = "Delete"
+                           })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page, @searchString = @ViewBag.SearchString }))
+        </div>
+    </div>
+</div>

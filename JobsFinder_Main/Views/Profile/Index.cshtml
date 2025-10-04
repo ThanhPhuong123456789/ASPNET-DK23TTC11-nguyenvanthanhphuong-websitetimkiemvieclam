@@ -1,0 +1,149 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout_Profile.cshtml";
+}
+
+@{
+    var session = (JobsFinder_Main.Common.UserLogin)Session[JobsFinder_Main.Common.CommonConstants.USER_SESSION];
+}
+
+@section jsFooter{
+    <script>
+        var hocVanCheckboxes = document.querySelectorAll(".checkbox");
+        var thangKetThucFields = document.querySelectorAll(".thangKetThuc");
+        var namKetThucFields = document.querySelectorAll(".namKetThuc");
+        var boxHocVanKetThucs = document.querySelectorAll(".boxKetThuc");
+
+        hocVanCheckboxes.forEach(function (checkbox, index) {
+            var thangKetThucField = thangKetThucFields[index];
+            var namKetThucField = namKetThucFields[index];
+            var boxHocVanKetThuc = boxHocVanKetThucs[index];
+
+            checkbox.addEventListener("change", function () {
+                if (checkbox.checked) {
+                    thangKetThucField.disabled = true;
+                    namKetThucField.disabled = true;
+                    boxHocVanKetThuc.classList.add("disabled-field");
+                } else {
+                    thangKetThucField.disabled = false;
+                    namKetThucField.disabled = false;
+                    boxHocVanKetThuc.classList.remove("disabled-field");
+                }
+            });
+        });
+    </script>
+    <script>
+        var btnCance = document.querySelectorAll(".btn-cance")
+        for (let i = 0; i < btnCance.length; i++) {
+            btnCance[i].addEventListener("click", function () {
+                boxForm.classList.remove("show-form-input");
+                overlay.classList.remove("show-overlay");
+
+                var forms = document.querySelectorAll(".show-form-profile");
+                for (let j = 0; j < forms.length; j++) {
+                    forms[j].classList.remove("show-form-profile");
+                }
+            })
+        }
+    </script>
+}
+
+@if (session != null)
+{
+    { Html.RenderAction("Create"); }
+    { Html.RenderAction("Create", "HocVan"); }
+    { Html.RenderAction("Create", "KinhNghiem"); }
+    { Html.RenderAction("Create", "KyNang"); }
+    { Html.RenderAction("Create", "ChungChi"); }
+    { Html.RenderAction("Create", "GiaiThuong"); }
+    { Html.RenderAction("Create", "KhoaHoc"); }
+    { Html.RenderAction("Create", "DuAn"); }
+    { Html.RenderAction("Create", "SanPham"); }
+    { Html.RenderAction("Create", "HoatDong"); }
+
+    var hocVanDao = new Model.DAO.HocVanDao();
+    var listAllHocVan = hocVanDao.ListAll(session.UserID);
+
+    foreach(var item in listAllHocVan)
+    {
+        { Html.RenderAction("Update", "HocVan", new { id = item.ID }); }
+        { Html.RenderAction("DeleteConfirm", "HocVan", new { id = item.ID }); }
+    }
+
+    var kinhNghiemDao = new Model.DAO.KinhNghiemDao();
+    var listAllKinhNghiem= kinhNghiemDao.ListAll(session.UserID);
+
+    foreach (var item in listAllKinhNghiem)
+    {
+        { Html.RenderAction("Update", "KinhNghiem", new { id = item.ID }); }
+        { Html.RenderAction("DeleteConfirm", "KinhNghiem", new { id = item.ID }); }
+    }
+
+    var kyNangDao = new Model.DAO.KyNangDao();
+    var listAllKyNang = kyNangDao.ListAll(session.UserID);
+
+    foreach (var item in listAllKyNang)
+    {
+        { Html.RenderAction("Update", "KyNang", new { id = item.ID }); }
+        { Html.RenderAction("DeleteConfirm", "KyNang", new { id = item.ID }); }
+    }
+
+    var chungChiDao = new Model.DAO.ChungChiDao();
+    var listAllChungChi = chungChiDao.ListAll(session.UserID);
+
+    foreach (var item in listAllChungChi)
+    {
+        { Html.RenderAction("Update", "ChungChi", new { id = item.ID }); }
+        { Html.RenderAction("DeleteConfirm", "ChungChi", new { id = item.ID }); }
+    }
+
+    var giaiThuongDao = new Model.DAO.GiaiThuongDao();
+    var listAllGiaiThuong = giaiThuongDao.ListAll(session.UserID);
+
+    foreach (var item in listAllGiaiThuong)
+    {
+        { Html.RenderAction("Update", "GiaiThuong", new { id = item.ID }); }
+        { Html.RenderAction("DeleteConfirm", "GiaiThuong", new { id = item.ID }); }
+    }
+
+    var khoaHocDao = new Model.DAO.KhoaHocDao();
+    var listAllKhoaHoc = khoaHocDao.ListAll(session.UserID);
+
+    foreach (var item in listAllKhoaHoc)
+    {
+        { Html.RenderAction("Update", "KhoaHoc", new { id = item.ID }); }
+        { Html.RenderAction("DeleteConfirm", "KhoaHoc", new { id = item.ID }); }
+    }
+
+    var duAnDao = new Model.DAO.DuAnDao();
+    var listAllDuAn = duAnDao.ListAll(session.UserID);
+
+    foreach (var item in listAllDuAn)
+    {
+        { Html.RenderAction("Update", "DuAn", new { id = item.ID }); }
+        { Html.RenderAction("DeleteConfirm", "DuAn", new { id = item.ID }); }
+    }
+
+    var sanPhamDao = new Model.DAO.SanPhamDao();
+    var listAllSanPham = sanPhamDao.ListAll(session.UserID);
+
+    foreach (var item in listAllHocVan)
+    {
+        { Html.RenderAction("Update", "SanPham", new { id = item.ID }); }
+        { Html.RenderAction("DeleteConfirm", "SanPham", new { id = item.ID }); }
+    }
+
+    var hoatDongDao = new Model.DAO.HoatDongDao();
+    var listAllHoatDong = hoatDongDao.ListAll(session.UserID);
+
+    foreach (var item in listAllHoatDong)
+    {
+        { Html.RenderAction("Update", "HoatDong", new { id = item.ID }); }
+        { Html.RenderAction("DeleteConfirm", "HoatDong", new { id = item.ID }); }
+    }
+}
+else
+{
+    { Html.RenderAction("Login", "User"); }
+}

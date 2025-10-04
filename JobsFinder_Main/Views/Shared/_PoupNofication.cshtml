@@ -1,0 +1,45 @@
+﻿<div id="popup" class="popup">
+    <div id="contentPopup" class="d-flex flex-row align-items-center p-3 contentPopup" style="background-color: #FFF; border-radius: 8px; padding-right: 40px !important;">
+        <div id="iconPopup"></div>
+        <div class="d-flex flex-column">
+            <h5 id="type" class="m-0">Thành công</h5>
+            <p id="message" class="m-0">Cập nhật thành công</p>
+        </div>
+    </div>
+</div>
+<style>
+    .popup {
+        position: fixed;
+        top: 100px;
+        right: 20px;
+        border-radius: 4px;
+        color: #fff;
+        font-weight: bold;
+        z-index: 9999;
+        display: none;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .show {
+        opacity: 1;
+    }
+
+    .success {
+        border-left: 4px solid #4070f4;
+        color: #4070f4;
+        display:flex;
+    }
+
+    .error {
+        border-left: 4px solid #ff3333;
+        color: #ff3333;
+        display: flex;
+    }
+
+    .warning {
+        border-left: 4px solid #ffcc00;
+        color: #ffcc00;
+        display: flex;
+    }
+</style>

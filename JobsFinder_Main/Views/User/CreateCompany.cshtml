@@ -1,0 +1,118 @@
+﻿@model JobsFinder_Main.Models.CompanyModel
+
+@{
+    var session = (JobsFinder_Main.Common.UserLogin)Session[JobsFinder_Main.Common.CommonConstants.USER_SESSION];
+}
+
+@section jsFooter{
+    <script>
+        $('#btnSelectImage').on('click', function (e) {
+            var finder = new CKFinder();
+            e.preventDefault();
+            finder.selectActionFunction = function (url) {
+                $('#txtImage').val(url);
+            };
+            finder.popup();
+        })
+        var editor = CKEDITOR.replace("txtDescription", {
+            customConfig: '/Assets/Admin/js/plugins/ckeditor/config.js',
+        });
+    </script>
+}
+
+@if (session != null)
+{
+    <h5 class="mb-3">Tạo doanh nghiệp</h5>
+    using (Html.BeginForm("CreateCompany", "User", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                <p>Tên công ty</p>
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>Ảnh đại diện</p>
+                <div class="col-md-10">
+                    <div class="d-flex align-items-center">
+                        @Html.TextBoxFor(model => model.Avatar, new { @class = "form-control txtImage", @id = "txtAvatar" })
+                        <a class="btnSelectAvatar" style="white-space: nowrap;" href="#">Tải lên hình ảnh</a>
+                    </div>
+
+                    @Html.ValidationMessageFor(model => model.Avatar, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>Ảnh bìa</p>
+                <div class="col-md-10">
+                    <div class="d-flex align-items-center">
+                        @Html.TextBoxFor(model => model.Background, new { @class = "form-control txtImage", @id = "txtBackground" })
+                        <a class="btnSelectBackground" style="white-space: nowrap;" href="#">Tải lên hình ảnh</a>
+                    </div>
+
+                    @Html.ValidationMessageFor(model => model.Background, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <p>Link trang web</p>
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.LinkPage, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.LinkPage, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>Số lượng nhân viên</p>
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.Employees, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Employees, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>Vị trí công ty</p>
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.Location, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Location, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>Giới thiệu công ty</p>
+                <div class="col-md-10">
+                    @Html.TextAreaFor(model => model.Description, new { @class = "form-control", @id = "txtDescription" })
+                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Hoàn tất" class="btn btn-outline-primary" style="border-radius: 4px; font-size: 14px; font-weight: 500; text-transform: inherit;" />
+                </div>
+            </div>
+        </div>
+    }
+    <style>
+        .form-control {
+            border-bottom: 1px solid #EEE !important;
+            font-size: 16px;
+        }
+
+        .col-md-10 {
+            width: 100%;
+        }
+    </style>
+}
+else
+{
+    { Html.RenderAction("Login", "User"); }
+}

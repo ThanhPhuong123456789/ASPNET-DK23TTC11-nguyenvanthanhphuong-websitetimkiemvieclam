@@ -1,0 +1,212 @@
+﻿@model Model.EF.Job
+
+@{
+    ViewBag.Title = "Chỉnh sửa công việc";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section header{
+    Chỉnh sửa công việc
+}
+
+@section jsFooter{
+    <script src="~/Assets/Admin/js/controller/jobController.js"></script>
+    <script>
+        function initCKEditor(textAreaIds) {
+            for (var i = 0; i < textAreaIds.length; i++) {
+                var editor = CKEDITOR.replace(textAreaIds[i], {
+                    customConfig: '/Assets/Admin/js/plugins/ckeditor/config.js'
+                });
+            }
+        }
+        initCKEditor(['txtDescription', 'txtRequestCandidate', 'txtInterest']);
+
+    </script>
+}
+
+@using (Html.BeginForm("Edit", "Job", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+
+
+<div class="form-horizontal">
+    <hr />
+    @if (Model.CompanyID != null)
+    {
+        <div class="form-group">
+            @Html.LabelFor(model => model.CompanyID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @if (ViewBag.CompanyID != null)
+                {
+                    @Html.DropDownListFor(model => model.CompanyID, (SelectList)ViewBag.CompanyID, new { @class = "form-control", @disabled = "disabled" })
+                }
+                else
+                {
+                    @Html.DropDownListFor(model => model.CompanyID, null, new { @class = "form-control", @disabled = "disabled" })
+                }
+                @Html.ValidationMessageFor(model => model.CompanyID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="form-group user-section">
+            @Html.LabelFor(model => model.UserID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @if (ViewBag.UserId != null)
+                {
+                    @Html.DropDownListFor(model => model.UserID, (SelectList)ViewBag.UserId, new { @class = "form-control", @disabled = "disabled" })
+                }
+                else
+                {
+                    @Html.DropDownListFor(model => model.UserID, null, new { @class = "form-control", @disabled = "disabled" })
+                }
+                @Html.ValidationMessageFor(model => model.UserID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    }
+
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.ID)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextAreaFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" }, id = "txtDescription" })
+            @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.RequestCandidate, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextAreaFor(model => model.RequestCandidate, new { htmlAttributes = new { @class = "form-control" }, id = "txtRequestCandidate" })
+            @Html.ValidationMessageFor(model => model.RequestCandidate, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Interest, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextAreaFor(model => model.Interest, new { htmlAttributes = new { @class = "form-control" }, id = "txtInterest" })
+            @Html.ValidationMessageFor(model => model.Interest, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Salary, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.Salary, new SelectList(new List<SelectListItem>
+            {
+                new SelectListItem { Text = "Thương lượng", Value = "False" },
+                new SelectListItem { Text = "Nhập giá trị cụ thể", Value = "True" }
+            }, "Value", "Text"), new { @class = "form-control", onchange = "salaryChange(this)" })
+            @Html.ValidationMessageFor(model => model.Salary, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group" id="salary-min-max" style="display:none">
+        @Html.LabelFor(model => model.SalaryMin, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.SalaryMin, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.SalaryMin, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.SalaryMax, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.SalaryMax, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.SalaryMax, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Quantity, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Quantity, new { @class = "form-control", type = "number", min = "0", max = "100" })
+            @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CategoryID, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @if (ViewBag.JobCategoryId != null)
+            {
+                @Html.DropDownListFor(model => model.CategoryID, (SelectList)ViewBag.JobCategoryId, new { @class = "form-control" })
+            }
+            else
+            {
+                @Html.DropDownListFor(model => model.CategoryID, null, new { @class = "form-control" })
+            }
+            @Html.ValidationMessageFor(model => model.CategoryID, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CarrerID, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @if (ViewBag.JobCareerId != null)
+            {
+                @Html.DropDownListFor(model => model.CarrerID, (SelectList)ViewBag.JobCareerId, new { @class = "form-control" })
+            }
+            else
+            {
+                @Html.DropDownListFor(model => model.CarrerID, null, new { @class = "form-control" })
+            }
+            @Html.ValidationMessageFor(model => model.CarrerID, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Deadline, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <div class="input-group date">
+                @Html.TextBoxFor(model => model.Deadline, new { @class = "form-control" })
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+            @Html.ValidationMessageFor(model => model.Deadline, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Rank, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Rank, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Rank, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Experience, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Experience, new { @class = "form-control", type = "number", min = "0", max = "5" })
+            @Html.ValidationMessageFor(model => model.Experience, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.WorkLocation, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.WorkLocation, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.WorkLocation, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Hoàn tất" class="btn btn-primary" />
+        </div>
+    </div>
+</div>
+}

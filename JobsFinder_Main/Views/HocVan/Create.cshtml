@@ -1,0 +1,118 @@
+﻿@model JobsFinder_Main.Models.HocVanModel
+@{
+    var session = (JobsFinder_Main.Common.UserLogin)Session[JobsFinder_Main.Common.CommonConstants.USER_SESSION];
+}
+
+@if (session != null)
+{
+    <div id="formHocVan" class="p-4 form-profile">
+        @using (Html.BeginForm("Create", "HocVan", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <h5 class="m-0">Học vấn</h5>
+                <hr class="my-3" />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group mb-4">
+                    <p class="label-title">Trường</p>
+                    <div class="col-md-10" style="width: 100%;">
+                        @Html.TextBoxFor(model => model.Truong, new { @class = "form-control", @placeholder = "Trường học" })
+                        @Html.ValidationMessageFor(model => model.Truong, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <p class="label-title">Chuyên ngành</p>
+                    <div class="col-md-10" style="width: 100%;">
+                        @Html.TextBoxFor(model => model.ChuyenNganh, new { @class = "form-control", @placeholder = "Công nghệ phần mềm, kinh tế, tự động hóa..." })
+                        @Html.ValidationMessageFor(model => model.ChuyenNganh, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <label class="mb-4">
+                    <input type="checkbox" id="hocVanCheckbox" class="checkbox" />
+                    Tôi đang học ở đây
+                </label>
+
+                <div class="d-flex flex-row justify-content-between">
+                    <div id="hocVanBatDau" class="d-flex justify-content-between" style="width: 48%">
+                        <div class="form-group mb-4">
+                            <p class="label-title">Tháng bắt đầu</p>
+                            <div class="col-md-10" style="width: 100%;">
+                                @Html.DropDownListFor(model => model.ThangBatDau, Enumerable.Range(1, 12).Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }), "Chọn tháng", new { @class = "form-control thangBatDau" })
+                                @Html.ValidationMessageFor(model => model.ThangBatDau, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <p class="label-title">Năm bắt đầu</p>
+                            <div class="col-md-10" style="width: 100%;">
+                                <div class="col-md-10" style="width: 100%;">
+                                    @{
+                                        int currentYear = DateTime.Now.Year;
+                                        int startYear = currentYear - 100;
+                                        List<SelectListItem> years = new List<SelectListItem>();
+                                        for (int year = currentYear; year >= startYear; year--)
+                                        {
+                                            years.Add(new SelectListItem { Value = year.ToString(), Text = year.ToString() });
+                                        }
+                                    }
+                                    @Html.DropDownListFor(model => model.NamBatDau, years, "Chọn năm", new { @class = "form-control namBatDau" })
+                                    @Html.ValidationMessageFor(model => model.NamBatDau, "", new { @class = "text-danger" })
+                                </div>
+
+                                @Html.ValidationMessageFor(model => model.NamBatDau, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="hocVanKetThuc" class="d-flex justify-content-between boxKetThuc" style="width: 48%">
+                        <div class="form-group mb-4">
+                            <p class="label-title">Tháng kết thúc</p>
+                            <div class="col-md-10" style="width: 100%;">
+                                @Html.DropDownListFor(model => model.ThangKetThuc, Enumerable.Range(1, 12).Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }), "Chọn tháng", new { @class = "form-control thangKetThuc" })
+                                @Html.ValidationMessageFor(model => model.ThangKetThuc, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <p class="label-title">Năm kết thúc</p>
+                            <div class="col-md-10" style="width: 100%;">
+                                <div class="col-md-10" style="width: 100%;">
+                                    @{
+                                        for (int year = currentYear; year >= startYear; year--)
+                                        {
+                                            years.Add(new SelectListItem { Value = year.ToString(), Text = year.ToString() });
+                                        }
+                                    }
+                                    @Html.DropDownListFor(model => model.NamKetThuc, years, "Chọn năm", new { @class = "form-control namKetThuc" })
+                                    @Html.ValidationMessageFor(model => model.NamKetThuc, "", new { @class = "text-danger" })
+                                </div>
+
+                                @Html.ValidationMessageFor(model => model.NamKetThuc, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <p class="label-title">Mô tả</p>
+                    <div class="col-md-10" style="width: 100%;">
+                        @Html.TextAreaFor(model => model.MoTaChiTiet, new{ @class = "form-control pt-2", @placeholder = "Mô tả chi tiết" })
+                        @Html.ValidationMessageFor(model => model.MoTaChiTiet, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group mb-2">
+                    <div class="col-md-offset-2 col-md-10 d-flex justify-content-center" style="width: 100%">
+                        <input type="submit" value="Hoàn tất" class="btn btn-primary" style="border-radius: 4px;" />
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+} else
+{
+    { Html.RenderAction("Login", "User"); }
+}

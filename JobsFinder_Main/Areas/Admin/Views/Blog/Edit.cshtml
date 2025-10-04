@@ -1,0 +1,67 @@
+﻿@model Model.EF.Blog
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section header{
+    Danh sách Blog
+}
+@section jsFooter{
+    <script src="~/Assets/Admin/js/controller/blogController.js"></script>
+    <script>
+        var editor = CKEDITOR.replace("txtDescription", {
+            customConfig: '/Assets/Admin/js/plugins/ckeditor/config.js',
+        });
+    </script>
+}
+
+
+@using (Html.BeginForm("Edit", "Blog", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ID)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Description, new { @class = "form-control", @id = "txtDescription" })
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CategoryID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @if (ViewBag.BlogCategoryId != null)
+                {
+                    @Html.DropDownListFor(model => model.CategoryID, (SelectList)ViewBag.BlogCategoryId, new { @class = "form-control" })
+                }
+                else
+                {
+                    @Html.DropDownListFor(model => model.CategoryID, null, new { @class = "form-control" })
+                }
+                @Html.ValidationMessageFor(model => model.CategoryID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Hoàn tất" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}

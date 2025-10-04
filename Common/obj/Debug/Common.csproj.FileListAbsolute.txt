@@ -1,0 +1,24 @@
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\Common\bin\Debug\Common.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\Common\bin\Debug\Common.pdb
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\Common\obj\Debug\Common.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\Common\obj\Debug\Common.pdb
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\Common\bin\Debug\Common.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\Common\bin\Debug\Common.pdb
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\Common\obj\Debug\Common.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\Common\obj\Debug\Common.pdb
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\hung5\Downloads\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\Common\bin\Debug\Common.dll
+C:\Users\hung5\Downloads\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\Common\bin\Debug\Common.pdb
+C:\Users\hung5\Downloads\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\hung5\Downloads\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\hung5\Downloads\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\Common\obj\Debug\Common.dll
+C:\Users\hung5\Downloads\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\Common\obj\Debug\Common.pdb
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\Common\bin\Debug\Common.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\Common\bin\Debug\Common.pdb
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\Common\obj\Debug\Common.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\Common\obj\Debug\Common.pdb

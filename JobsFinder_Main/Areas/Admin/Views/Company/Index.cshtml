@@ -1,0 +1,99 @@
+﻿@model PagedList.IPagedList<Model.EF.Company>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Danh sách công ty";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section header{
+    Danh sách công ty
+}
+
+@section jsFooter{
+    <script src="~/Assets/Admin/js/controller/companyController.js"></script>
+}
+
+<!-- Topbar Search -->
+@using (Html.BeginForm("Index", "Company", FormMethod.Get, new { @class = "navbar-search" }))
+{
+    <div class="input-group">
+        <input type="text" class="form-control bg-white search-input" placeholder="Tìm kiếm..."
+               aria-label="Search" aria-describedby="basic-addon2" name="searchString" value="@ViewBag.SearchString">
+        <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">
+                <i class="fas fa-search fa-sm"></i>
+            </button>
+        </div>
+        <a class="btn btn-primary ml-3" href="/Admin/Company/Create">
+            Thêm mới công ty
+        </a>
+    </div>
+    <style>
+        .navbar-search {
+            max-width: 40%;
+            margin-bottom: 1rem;
+        }
+
+            .navbar-search > input {
+                border: 1px solid #d1d3e2;
+            }
+    </style>
+}
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Tên công ty</th>
+                        <th>Link</th>
+                        <th>Ngày tạo</th>
+                        <th>Ngày cập nhật</th>
+                        <th>Trạng thái</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th>Tên công ty</th>
+                        <th>Link</th>
+                        <th>Ngày tạo</th>
+                        <th>Ngày cập nhật</th>
+                        <th>Trạng thái</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr id="row_@item.ID">
+                            <td>@item.ID</td>
+                            <td>@item.Name</td>
+                            <td>@item.LinkPage</td>
+                            <td>@item.CreatedDate</td>
+                            <td>@item.ModifiedDate</td>
+                            <td><a href="#" class="btn-active" data-id="@item.ID">@(item.Status == true ? "Kích hoạt" : "Khóa")</a></td>
+                            <td>
+                                <a href="/Admin/Company/Edit/@item.ID">Sửa</a>
+                                @Ajax.ActionLink("Xóa", "Delete", new { @id = item.ID }, new AjaxOptions
+                           {
+                               Confirm = "Bạn có muốn xóa bản ghi này",
+                               OnComplete = "$(row_" + @item.ID + ").remove()",
+                               HttpMethod = "Delete"
+                           })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page, @searchString = @ViewBag.SearchString }))
+        </div>
+    </div>
+</div>
+

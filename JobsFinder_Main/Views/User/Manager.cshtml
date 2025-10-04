@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Manager";
+    Layout = "~/Views/Shared/_Layout_Manager.cshtml";
+}
+
+@section jsFooter{
+    <script>
+        $('#btnSelectImage').on('click', function (e) {
+            var finder = new CKFinder();
+            e.preventDefault();
+            finder.selectActionFunction = function (url) {
+                $('#txtImage').val(url);
+            };
+            finder.popup();
+        })
+        var editor = CKEDITOR.replace("txtDescription", {
+            customConfig: '/Assets/Admin/js/plugins/ckeditor/config.js',
+        });
+    </script>
+}
+
+@{Html.RenderPartial("Update");}

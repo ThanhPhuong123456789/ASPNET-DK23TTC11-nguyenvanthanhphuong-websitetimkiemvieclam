@@ -1,0 +1,84 @@
+﻿
+
+@model Model.EF.Job
+
+@using Model.DAO;
+
+@{
+    var jobDao = new JobDao();
+
+    var subTitle = jobDao.SubTitle(Model.CompanyID, Model.UserID);
+    ViewBag.SubTitle = subTitle;
+
+    var categoryName = jobDao.GetCategory(Model.CategoryID);
+    ViewBag.Category = categoryName;
+
+    var formatSalary = jobDao.FormatSalary(Model.ID);
+    ViewBag.FormatSalary = formatSalary;
+
+    var formatTime = jobDao.FormatTime(Model.ID);
+    ViewBag.FormatTime = formatTime;
+
+    var countTime = jobDao.CountTime(Model.ID);
+    ViewBag.CountTime = countTime;
+
+    var getAvatar = jobDao.GetAvatarFromCompany(Model.CompanyID, Model.UserID);
+    if (getAvatar == null)
+    {
+        ViewBag.Getavatar = "./Assets/Client/JobsFinder/img/Logo.png";
+    }
+    else
+    {
+        ViewBag.GetAvatar = getAvatar;
+    }
+
+    var url = "/cong-viec/" + @Model.Code + "-" + @Model.ID;
+}
+
+
+<div class="job-item mb-4">
+    <div class="row g-4">
+        <div class="col-sm-12 col-md-8 d-flex">
+            <img class="flex-shrink-0 img-fluid border rounded img-company" src="@ViewBag.GetAvatar" alt="@Model.Name">
+            <div class="text-start ps-4">
+                <div class="item-content-top">
+                    <div class="title-item">
+                        <div class="jobs-name d-flex align-items-center">
+                            <a href="@url" style="font-weight: 700; font-size: 18px;" class="m-0">@Model.Name</a>
+                        </div>
+                        <a href="#" style="text-decoration: underline; font-size: 14px; text-transform: uppercase;" class="mb-3">@ViewBag.SubTitle</a>
+                    </div>
+                </div>
+
+                <div class="item-content-property">
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-geo-alt"></i>
+                        @Model.WorkLocation
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-calendar-event"></i>
+                        @ViewBag.Category
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-credit-card"></i>
+                        @ViewBag.FormatSalary
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-clock"></i>
+                        @ViewBag.FormatTime
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center box-action">
+            <div class="d-flex mb-3">
+                <a class="btn btn-light btn-square me-3 btn-save" href="@url"><i class="far fa-heart text-primary"></i></a>
+                <a class="btn btn-primary btn-apply" href="">Ứng tuyển ngay</a>
+            </div>
+            <span class="text-truncate">
+                <i class="bi bi-clock-history"></i>
+                @ViewBag.CountTime
+            </span>
+        </div>
+    </div>
+</div>

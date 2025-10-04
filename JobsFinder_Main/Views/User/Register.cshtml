@@ -1,0 +1,125 @@
+﻿@model  JobsFinder_Main.Models.RegisterModel
+@using BotDetect.Web.Mvc;
+
+<link href="@BotDetect.Web.CaptchaUrls.Absolute.LayoutStyleSheetUrl" rel="stylesheet" type="text/css" />
+
+@{
+    MvcCaptcha registerCaptcha = new MvcCaptcha("registerCaptcha");
+    registerCaptcha.UserInputID = "CaptchaCode";
+}
+
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section jsFooter{
+    <script>
+        $('#btnSelectImage').on('click', function (e) {
+            var finder = new CKFinder();
+            e.preventDefault();
+            finder.selectActionFunction = function (url) {
+                $('#txtImage').val(url);
+            };
+            finder.popup();
+        })
+    </script>
+}
+
+<div class="container d-flex" style="width: 100%; padding: 24px 0; border-radius: 5px; background-color: #FFF;">
+    <div class="box-left" style="padding-left: 32px; padding-right: 100px;">
+        @using (Html.BeginForm("Register", "User", FormMethod.Post))
+        {
+            <div class="title">
+                <h3>Đăng ký</h3>
+                <p>Tham gia cộng đồng của chúng tôi và tìm kiếm công việc phù hợp với bạn.</p>
+            </div>
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+            <div class="form-group">
+                <p>Tên đăng nhập</p>
+                <div class="d-flex flex-row align-items-center box-input">
+                    <i class="bi bi-person-fill"></i>
+                    @Html.TextBoxFor(model => model.UserName, new { @placeholder = "Nhập tên nhập", @class = "form-control" })
+                </div>
+                @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <p>Mật khẩu</p>
+                <div class="d-flex flex-row align-items-center box-input">
+                    <i class="bi bi-lock-fill"></i>
+                    @Html.PasswordFor(model => model.Password, new { @placeholder = "Nhập mật khẩu", @class = "form-control" })
+                </div>
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <p>Họ và tên</p>
+                <div class="d-flex flex-row align-items-center box-input">
+                    <i class="bi bi-person-fill"></i>
+                    @Html.TextBoxFor(model => model.Name, new { @placeholder = "Nhập họ và tên", @class = "form-control" })
+                </div>
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <p>Số điện thoại</p>
+                <div class="d-flex flex-row align-items-center box-input">
+                    <i class="bi bi-telephone-fill"></i>
+                    @Html.TextBoxFor(model => model.Phone, new { @placeholder = "Nhập số điện thoại", @class = "form-control", @type = "number" })
+                </div>
+                @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <p>Email</p>
+                <div class="d-flex flex-row align-items-center box-input">
+                    <i class="bi bi-envelope-fill"></i>
+                    @Html.TextBoxFor(model => model.Email, new { @placeholder = "Nhập email", @class = "form-control" })
+                </div>
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <div class="d-flex flex-row align-items-center box-input">
+                    @Html.Captcha(registerCaptcha)
+                    @Html.TextBox("CaptchaCode")
+                </div>
+            </div>
+
+
+
+            <div class="form-group text-center box-btn">
+                <div class="col-12">
+                    <button class="btn btn-primary btn-lg text-uppercase" type="submit" style="font-size: 14px; font-weight: 500; width: 100%;">Đăng ký</button>
+                </div>
+            </div>
+            <p style="width: 100%; text-align: center;">Hoặc</p>
+            <a class="btn btn-secondary" style="width: 100%;  font-size: 14px;  font-weight: 500; text-transform: capitalize;">Đăng ký bằng facebook</a>
+            <div class="box-options">
+                <div class="box-signup">
+                    <p>Bạn đã có tài khoản?</p>
+                    <a href="/dang-nhap" class="nav-link">Đăng nhập</a>
+                </div>
+                <a href="/quen-mat-khau">Quên mật khẩu</a>
+            </div>
+            <div class="box-support">
+                <p>Bạn đang khó khăn trong việc tạo tài khoản?</p>
+                <span>Hãy gọi tới số (84)-386545891 (giờ hành chính)</span>
+            </div>
+        }
+    </div>
+
+    <div class="box-right">
+        ﻿<div class="box-banner-login">
+            <div class="bannerLogin-box-slick">
+                <div class="mini-box d-flex justify-content-center align-items-center" style="flex-direction: column;">
+                    <img src="~/Assets/Client/JobsFinder/img/Illustration.png" style="border-radius: 5px; margin: 32px 0; height: 360px; object-fit: cover;" />
+                    <h3 style="font-size: 18px; font-weight: 600; color: #212f3f;">Công cụ viết CV đẹp Miễn phí</h3>
+                    <p style="font-size: 14px; font-weight: 400; color: #212f3f; padding: 0 32px; text-align: center">Nhiều mẫu CV đẹp, phù hợp nhu cầu ứng tuyển các vị trí khác nhau. Dễ dàng chỉnh sửa thông tin, tạo CV online nhanh chóng trong vòng 5 phút.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,82 @@
+﻿@model Model.EF.Blog
+
+@{
+    ViewBag.Title = "Thêm mới Blog";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section header{
+    Thêm mới Blog
+}
+
+@section jsFooter{
+    <script>
+        $('#btnSelectImage').on('click', function (e) {
+            var finder = new CKFinder();
+            e.preventDefault();
+            finder.selectActionFunction = function (url) {
+                $('#txtImage').val(url);
+            };
+            finder.popup();
+        })
+
+        var editor = CKEDITOR.replace("txtDescription", {
+            customConfig: '/Assets/Admin/js/plugins/ckeditor/config.js',
+        });
+    </script>
+}
+
+@using (Html.BeginForm("Create", "Blog", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextAreaFor(model => model.Description, new { @class = "form-control", @id = "txtDescription" })
+            @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Image, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Image, new { @class = "form-control", @id = "txtImage" })
+            <a id="btnSelectImage" href="#">Tải lên hình ảnh</a>
+            @Html.ValidationMessageFor(model => model.Image, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CategoryID, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @if (ViewBag.BlogCategoryId != null)
+            {
+                @Html.DropDownListFor(model => model.CategoryID, (SelectList)ViewBag.BlogCategoryId, new { @class = "form-control" })
+            }
+            else
+            {
+                @Html.DropDownListFor(model => model.CategoryID, null, new { @class = "form-control" })
+            }
+            @Html.ValidationMessageFor(model => model.CategoryID, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Hoàn tất" class="btn btn-primary" />
+        </div>
+    </div>
+</div>
+}

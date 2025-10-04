@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "CompanyManager";
+    Layout = "~/Views/Shared/_Layout_Manager.cshtml";
+}
+
+@{
+    var session = (JobsFinder_Main.Common.UserLogin)Session[JobsFinder_Main.Common.CommonConstants.USER_SESSION];
+}
+
+@if (session == null)
+            {
+                { Html.RenderAction("Login", "User"); }
+            }
+            else
+            {
+                var dao = new Model.DAO.JobDao();
+                var model = dao.ListInUser(session.UserName).ToList();
+
+                var companyDao = new Model.DAO.CompanyDao();
+
+    <h5 class="mb-3">Bài tuyển dụng của bạn</h5>
+
+    if (model.Count != 0)
+    {
+        foreach (var item in model)
+        {
+            var img = companyDao.GetAvatar(item.CompanyID);
+        var companyName = companyDao.GetName(item.CompanyID);
+            <div class="box-job d-flex"  id="row_@item.ID">
+                <img src="@img" style="width: 44px; height: 44px; border: 1px solid #EEE; border-radius: 22px;"/>
+                <div class="d-flex mx-3 justify-content-between" style="width: 100%;">
+                    <div class="d-flex">
+                        <div class="d-flex flex-column">
+                            <a href="/User/EditJob/@item.ID" style="font-size: 16px; font-weight:600; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; width: 600px;">@item.Name</a>
+                            <a style="font-size: 14px; font-weight: 500;">@companyName</a>
+                        </div>
+                        @if (item.Deadline <= DateTime.Now)
+                        {
+                            <p style="padding: 2px 8px; background-color: #FF6D6D; border-radius: 4px; color: #FFF; font-size: 12px; height: max-content; margin: 0 12px;">Hết hạn</p>
+    }
+                        else if (item.Deadline <= DateTime.Now.AddDays(-1))
+                        {
+                            <p style="padding: 2px 8px; background-color: #FFB05B; border-radius: 4px; color: #FFF; font-size: 12px; height: max-content; margin: 0 12px;">Sắp hết hạn</p>
+                        } else
+{
+                            <p style="padding: 2px 8px; background-color: #4CA6A8; border-radius: 4px; color: #FFF; font-size: 12px; height: max-content; margin: 0 12px;">Hoạt động</p>
+                        }
+
+                        <style>
+                            .box-job a:hover {
+color: #4CA6A8 !important;
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+        }
+    }
+    else
+{
+        <p>Không có công việc nào</p>
+        <a href="/User/JobManager">Đến trang đăng công việc</a>
+    }
+}

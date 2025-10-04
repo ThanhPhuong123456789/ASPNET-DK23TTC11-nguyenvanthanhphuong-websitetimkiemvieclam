@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "CompanyManager";
+    Layout = "~/Views/Shared/_Layout_Manager.cshtml";
+}
+
+@section jsFooter{
+    <script src="~/Assets/Admin/js/controller/jobController.js"></script>
+    <script>
+        $('.btnSelectAvatar').on('click', function (e) {
+            var finder = new CKFinder();
+            e.preventDefault();
+            finder.selectActionFunction = function (url) {
+                $('#txtAvatar').val(url);
+            };
+            finder.popup();
+        })
+
+        $('.btnSelectBackground').on('click', function (e) {
+            var finder = new CKFinder();
+            e.preventDefault();
+            finder.selectActionFunction = function (url) {
+                $('#txtBackground').val(url);
+            };
+            finder.popup();
+        })
+
+        var editor = CKEDITOR.replace("txtDescription", {
+            customConfig: '/Assets/Admin/js/plugins/ckeditor/config.js',
+        });
+        var editor = CKEDITOR.replace("txtRequestCandidate", {
+            customConfig: '/Assets/Admin/js/plugins/ckeditor/config.js',
+        });
+        var editor = CKEDITOR.replace("txtInterest", {
+            customConfig: '/Assets/Admin/js/plugins/ckeditor/config.js',
+        });
+        var editor = CKEDITOR.replace("txtDetail", {
+            customConfig: '/Assets/Admin/js/plugins/ckeditor/config.js',
+        });
+
+        $("#addCompanyLink").click(function () {
+            $(".formAddCompany").css("display", "block");
+        });
+    </script>
+}
+
+@{Html.RenderPartial("CreateJob");}

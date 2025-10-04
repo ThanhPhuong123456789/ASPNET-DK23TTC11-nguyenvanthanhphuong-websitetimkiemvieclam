@@ -1,0 +1,422 @@
+﻿@model Model.EF.Job
+
+@{
+    ViewBag.Title = "CompanyManager";
+    Layout = "~/Views/Shared/_Layout_Manager.cshtml";
+}
+
+@{
+    var session = (JobsFinder_Main.Common.UserLogin)Session[JobsFinder_Main.Common.CommonConstants.USER_SESSION];
+}
+
+@section jsFooter{
+    <script src="~/Assets/Admin/js/controller/jobController.js"></script>
+    <script>
+        $('.btnSelectAvatar').on('click', function (e) {
+            var finder = new CKFinder();
+            e.preventDefault();
+            finder.selectActionFunction = function (url) {
+                $('#txtAvatar').val(url);
+            };
+            finder.popup();
+        })
+
+        $('.btnSelectBackground').on('click', function (e) {
+            var finder = new CKFinder();
+            e.preventDefault();
+            finder.selectActionFunction = function (url) {
+                $('#txtBackground').val(url);
+            };
+            finder.popup();
+        })
+
+        var editor = CKEDITOR.replace("txtDescription", {
+            customConfig: '/Assets/Admin/js/plugins/ckeditor/config.js',
+        });
+        var editor = CKEDITOR.replace("txtRequestCandidate", {
+            customConfig: '/Assets/Admin/js/plugins/ckeditor/config.js',
+        });
+        var editor = CKEDITOR.replace("txtInterest", {
+            customConfig: '/Assets/Admin/js/plugins/ckeditor/config.js',
+        });
+        var editor = CKEDITOR.replace("txtDetail", {
+            customConfig: '/Assets/Admin/js/plugins/ckeditor/config.js',
+        });
+
+        $("#addCompanyLink").click(function () {
+            $(".formAddCompany").css("display", "block");
+        });
+    </script>
+    <script>
+        function handleDeleteSuccess() {
+            window.location.href = "/User/ListJobs";
+        }
+    </script>
+}
+
+@if (session == null)
+{
+    { Html.RenderAction("Login", "User"); }
+}
+else
+{
+    var companyDao = new Model.DAO.CompanyDao();
+    ViewBag.CompanyId = new SelectList(companyDao.ListInUser(session?.UserName), "ID", "Name", Model.CompanyID);
+
+    var jobCategoryDao = new Model.DAO.JobCategoryDao();
+    ViewBag.JobCategoryId = new SelectList(jobCategoryDao.ListAll(), "ID", "Name", Model.CategoryID);
+
+    var careerDao = new Model.DAO.CareerDao();
+    ViewBag.CareerId = new SelectList(careerDao.ListAll(), "ID", "Name", Model.CarrerID);
+
+    var recumentDao = new Model.DAO.RecumentDao();
+    var listRecument = recumentDao.ListAll(Model.ID);
+    var listApply = recumentDao.ListApply(Model.ID);
+
+
+    <div class="mb-5">
+        <h5 class="mb-3">Danh sách ứng viên</h5>
+        <div>
+            @if (listRecument.Count == 0)
+            {
+                <p>Chưa có ứng viên nào</p>
+            }
+            else
+            {
+                foreach (var item in listRecument)
+                {
+                    <div class="d-flex flex-row align-items-center justify-content-between mb-3" style="padding: 12px; border: 1px solid #808080; border-radius: 4px; border-left: 4px solid #ff6a00;">
+                        <div class="d-flex flex-column">
+                            <a href="/Recument/Detail/@item.ID" style="font-weight: 700; font-size: 15px">@item.Name</a>
+                            <p class="m-0" style="font-size: 14px;">@item.Email</p>
+                        </div>
+                        <a class="btn btn-primary" style="border-radius: 4px; height: fit-content; font-size: 13px; font-weight: 600;">Xem hồ sơ</a>
+                    </div>
+                }
+            }
+
+        </div>
+    </div>
+
+    <div class="mb-5">
+        <h5 class="mb-3">Danh sách ứng viên đã duyệt</h5>
+        <div>
+            @if (listApply.Count == 0)
+            {
+                <p>Chưa có ứng viên được duyệt</p>
+            }
+            else
+            {
+                foreach (var item in listApply)
+                {
+                    <div class="d-flex flex-row align-items-center justify-content-between mb-3" style="padding: 12px; border: 1px solid #808080; border-radius: 4px; border-left: 4px solid #00ff90">
+                        <div class="d-flex flex-column">
+                            <a href="/Recument/Detail/@item.ID" style="font-weight: 700; font-size: 15px">@item.Name</a>
+                            <p class="m-0" style="font-size: 14px;">@item.Email</p>
+                        </div>
+                        <a class="btn btn-primary" style="border-radius: 4px; height: fit-content; font-size: 13px; font-weight: 600;">Xem hồ sơ</a>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+
+    <button class="btn btn-primary btn-show-form" data-form="formEditJob" style="font-size: 14px; text-transform:capitalize; border-radius: 4px; width: 100%;">Chỉnh sửa bài tuyển dụng</button>
+
+    <div id="overlay"></div>
+
+    <div id="form-input" class="mb-3">
+        <div id="formEditJob" class="form-profile">
+            <h5 style="background-color: #fff; position: fixed; width: 900px; z-index: 100; padding: 24px; box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">Chỉnh sửa bài tuyển dụng</h5>
+
+            @using (Html.BeginForm("EditJob", "User", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    <div class="form-group company-section">
+                        <p>Chọn công ty tuyển dụng</p>
+                        <div class="col-md-10">
+                            @if (ViewBag.CompanyId != null)
+                            {
+                                @Html.DropDownListFor(model => model.CompanyID, (SelectList)ViewBag.CompanyId, new { @class = "form-control", @disable = "disabled" })
+                            }
+                            else
+                            {
+                                <a href="/User/CreateCompany">Tạo mới công ty</a>
+                            }
+                            @Html.ValidationMessageFor(model => model.CompanyID, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Tên công việc</p>
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Mô tả công việc</p>
+                        <div class="col-md-10">
+                            @Html.TextAreaFor(model => model.Description, new { @class = "form-control", @id = "txtDescription" })
+                            @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Yêu cầu ứng viên</p>
+                        <div class="col-md-10">
+                            @Html.TextAreaFor(model => model.RequestCandidate, new { @class = "form-control", @id = "txtRequestCandidate" })
+                            @Html.ValidationMessageFor(model => model.RequestCandidate, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Quyền lợi</p>
+                        <div class="col-md-10">
+                            @Html.TextAreaFor(model => model.Interest, new { @class = "form-control", @id = "txtInterest" })
+                            @Html.ValidationMessageFor(model => model.Interest, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Cách thức ứng tuyển</p>
+                        <div class="col-md-10">
+                            @Html.TextAreaFor(model => model.Details, new { @class = "form-control", @id = "txtDetail" })
+                            @Html.ValidationMessageFor(model => model.Details, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Mức lương</p>
+                        <div class="col-md-10">
+                            @Html.DropDownListFor(model => model.Salary, new SelectList(new List<SelectListItem>
+                            {
+                                new SelectListItem { Text = "Thương lượng", Value = "False" },
+                                new SelectListItem { Text = "Nhập giá trị cụ thể", Value = "True" }
+                            }, "Value", "Text"), new { @class = "form-control", onchange = "salaryChange(this)" })
+                            @Html.ValidationMessageFor(model => model.Salary, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="salary-min-max" style="display:none">
+                        <p>Mức lương tối thiểu</p>
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.SalaryMin, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.SalaryMin, "", new { @class = "text-danger" })
+                        </div>
+                        <p>Mức lương tối đa</p>
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.SalaryMax, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.SalaryMax, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Số lượng tuyển</p>
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.Quantity, new { @class = "form-control", type = "number", min = "0", max = "100" })
+                            @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Chọn danh mục công việc</p>
+                        <div class="col-md-10">
+                            @if (ViewBag.JobCategoryId != null)
+                            {
+                                @Html.DropDownListFor(model => model.CategoryID, (SelectList)ViewBag.JobCategoryId, new { @class = "form-control" })
+                            }
+                            else
+                            {
+                                @Html.DropDownListFor(model => model.CategoryID, null, new { @class = "form-control" })
+                            }
+                            @Html.ValidationMessageFor(model => model.CategoryID, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Chọn danh mục ngành nghề</p>
+                        <div class="col-md-10">
+                            @if (ViewBag.CareerId != null)
+                            {
+                                @Html.DropDownListFor(model => model.CarrerID, (SelectList)ViewBag.CareerId, new { @class = "form-control" })
+                            }
+                            else
+                            {
+                                @Html.DropDownListFor(model => model.CarrerID, null, new { @class = "form-control" })
+                            }
+                            @Html.ValidationMessageFor(model => model.CarrerID, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Hạn nộp hồ sơ</p>
+                        <div class="col-md-10">
+                            <div class="input-group date">
+                                @Html.TextBoxFor(model => model.Deadline, new { @class = "form-control" })
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                            @Html.ValidationMessageFor(model => model.Deadline, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Năm kinh nghiệm</p>
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.Experience, new { @class = "form-control", type = "number", min = "0", max = "5" })
+                            @Html.ValidationMessageFor(model => model.Experience, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Giới tính</p>
+                        <div class="col-md-10">
+                            @Html.DropDownListFor(model => model.Gender, new List<SelectListItem>
+                            {
+                                new SelectListItem { Text = "Nam", Value = "Nam" },
+                                new SelectListItem { Text = "Nữ", Value = "Nữ" },
+                                new SelectListItem { Text = "Tất cả", Value = "Tất cả" }
+                            }, "Chọn giới tính", new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Địa điểm làm việc</p>
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.WorkLocation, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.WorkLocation, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row">
+                        <div class="form-group" style="margin-right: 12px; width: 100%;">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Hoàn tất" class="btn btn-primary" style="border-radius: 4px; font-size: 14px; font-weight: 500; text-transform: inherit; width: 100%;" />
+                            </div>
+                        </div>
+
+                        <div class="form-group m-0 btn-delete" style="margin-left: 12px; width: 100%;">
+                            @Ajax.ActionLink("Xóa", "DeleteJob", new { id = Model.ID }, new AjaxOptions
+                            {
+                                Confirm = "Bạn có chắc chắn muốn xóa công việc này?",
+                                HttpMethod = "DELETE",
+                                OnSuccess = "handleDeleteSuccess",
+                                OnFailure = "handleDeleteFailure",
+                            })
+                            <style>
+                                .btn-delete > a {
+                                    border: 1px solid #FF0000;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    padding: 8px 22px;
+                                    border-radius: 4px;
+                                }
+                            </style>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            }
+        </div>
+    </div>
+
+    <style>
+        .form-control {
+            border-bottom: 1px solid #EEE !important;
+            font-size: 16px;
+        }
+
+        .col-md-10 {
+            width: 100%;
+        }
+
+        #form-input {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1000;
+            margin-left: 250px;
+            margin-right: 250px;
+            display: flex;
+            border-radius: 4px;
+        }
+
+        .show-form-input {
+            z-index: 1200 !important;
+        }
+
+        .form-profile {
+            background-color: #fff;
+            width: 900px;
+            border-radius: 4px;
+            display: none;
+            padding-bottom: 24px;
+        }
+
+        .show-form-profile {
+            display: block !important;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1100;
+            display: none;
+            overflow: hidden;
+        }
+
+        .show-overlay {
+            display: block !important;
+        }
+
+        .form-profile .form-group .form-control {
+            height: 40px;
+            font-size: 13px;
+            border: 1px solid rgba(0,0,0,.1) !important;
+            padding-left: 16px;
+            padding-right: 16px;
+            min-width: 200px;
+        }
+
+        .form-group > p {
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .form-profile .label-title {
+            font-weight: 700;
+        }
+
+        textarea {
+            min-height: 100px !important;
+        }
+
+        .disabled-field {
+            opacity: 0 !important;
+            pointer-events: none;
+        }
+        .form-horizontal {
+            padding: 24px;
+            margin-top: 50px;
+        }
+    </style>
+
+}

@@ -1,0 +1,264 @@
+﻿@model Model.EF.Job
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var session = (JobsFinder_Main.Common.UserLogin)Session[JobsFinder_Main.Common.CommonConstants.USER_SESSION];
+
+    var companyDao = new Model.DAO.CompanyDao();
+    ViewBag.Avatar = companyDao.GetAvatar(Model.CompanyID);
+
+    ViewBag.CompanyName = companyDao.GetName(Model.CompanyID);
+    ViewBag.LinkCompany = companyDao.GetLinkPage(Model.CompanyID);
+    ViewBag.DetailCompany = companyDao.GetDetail(Model.CompanyID);
+    var metaTitleCompany = companyDao.GetMetaTitle(Model.CompanyID);
+
+    var categoryDao = new Model.DAO.JobCategoryDao();
+    ViewBag.CategoryName = categoryDao.GetName(Model.CategoryID);
+
+    var jobDao = new Model.DAO.JobDao();
+    ViewBag.ForMatSalary = jobDao.FormatSalary(Model.ID);
+    ViewBag.ForMatTime = jobDao.FormatTime(Model.ID);
+    ViewBag.DeadLine = jobDao.CountTime(Model.ID);
+
+    
+
+    var jobInCompnay = jobDao.GetJobInCompany(Model.CompanyID);
+
+    var company = new Model.EF.Company();
+    var compannyURL = "/cong-ty/" + metaTitleCompany + "-" + Model.CompanyID;
+
+}
+
+
+
+<div class="container-xxl pt-5">
+    <div class="container">
+        <div class="title d-flex">
+            <h4 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Chi tiết công việc</h4>
+        </div>
+        <div class="detail-job">
+            <div class="box-top d-flex justify-content-between">
+                <div class="info-job">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="@ViewBag.Avatar" alt="" style="width: 80px; height: 80px; border-radius: 8px; border: 1px solid #E7F0FA; margin-right: 24px;">
+                        <div class="name-job">
+                            <h3>@Model.Name</h3>
+                            <h5 style="text-decoration: underline;">@ViewBag.CompanyName</h5>
+                            <p class="m-0">Code: @Model.Code</p>
+                        </div>
+                    </div>
+
+                    <div class="item-content-property">
+                        <span class="text-truncate me-3">
+                            <i class="bi bi-geo-alt"></i>
+                            @Model.WorkLocation
+                        </span>
+                        <span class="text-truncate me-3">
+                            <i class="bi bi-calendar-event"></i>
+                            @ViewBag.CategoryName
+                        </span>
+                        <span class="text-truncate me-3">
+                            <i class="bi bi-credit-card"></i>
+                            @ViewBag.ForMatSalary
+                        </span>
+                        <span class="text-truncate me-3">
+                            <i class="bi bi-clock"></i>
+                            @ViewBag.ForMatTime
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center box-action">
+                    <div class="d-flex mb-3">
+                        <a class="btn btn-light btn-square me-3 btn-save" href=""><i class="far fa-heart text-primary"></i></a>
+                        <a class="btn btn-primary btn-apply" href="">Ứng tuyển ngay</a>
+                    </div>
+                    <span class="text-truncate">
+                        <i class="bi bi-clock-history"></i>
+                        Hạn nộp: @ViewBag.DeadLine
+                    </span>
+                </div>
+            </div>
+
+            <div class="box-bottom d-flex mt-5 mb-5 justify-content-between">
+                <div class="bottom-left" style="width: 65%;">
+
+                    <div class="box-content p-4" style="margin-bottom: 24px; background: #f6faff; border-radius: 4px; ">
+                        <h4>Mô tả</h4>
+                        <div class="content">
+                            @Html.Raw(Model.Description)
+                        </div>
+                    </div>
+
+                    <div class="box-content p-4" style="margin-bottom: 24px; background: #f6faff; border-radius: 4px; ">
+                        <h4>Yêu cầu ứng viên</h4>
+                        <div class="content">
+                            @Html.Raw(Model.RequestCandidate)
+                        </div>
+                    </div>
+
+                    <div class="box-content p-4" style="background: #f6faff; border-radius: 4px; ">
+                        <h4>Quyền lợi</h4>
+                        <div class="content">
+                            @Html.Raw(Model.Interest)
+                        </div>
+                    </div>
+
+                    <div class="box-content p-4" style="border-radius: 4px; border: 1px solid #E7F0FA; margin-top: 24px;">
+                        <h4>Ứng tuyển</h4>
+
+                        @if (session == null)
+                        {
+                            <div class="card" style="background-color: #fafafa; margin-top: 24px;">
+                                <p>Ứng viên nộp hồ sơ trực tuyến bằng cách bấm Ứng tuyển ngay dưới đây.</p>
+
+                                <a href="/dang-nhap">Ứng tuyển ngay</a>
+                            </div>
+                        }
+                        else
+                        {
+                    <div class="card" style="background-color: #fafafa; margin-top: 24px;">
+                        @using (Html.BeginForm("Apply", "Job", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-horizontal">
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                @Html.HiddenFor(model => model.recument.JobID, new { Value = Model.ID })
+
+                                <div class="form-group company-section">
+                                    <div class="d-flex flex-row">
+                                        <p style="margin-right: 6px; font-weight: 600">Chọn CV online:</p>
+                                        <strong style="color: #4CA6A8">Khuyên dùng</strong>
+                                    </div>
+
+                                    <div class="col-md-10" style="width: 100%;">
+                                        @{ 
+                                            var profileDao = new Model.DAO.ProfileDao();
+                                            ViewBag.ListProfile = new SelectList(profileDao.ListAll(session.UserID), "UserID", "HoVaTen", Model.recument.ProfileID);
+                                        }
+                                        @if (ViewBag.ListProfile != null)
+                                        {
+                                            @Html.DropDownListFor(model => model.recument.ProfileID, (SelectList)ViewBag.ListProfile, new { @class = "form-control field drop" })
+                                        }
+
+                                        else
+                                        {
+                                            <a href="/profile/ho-so-ca-nhan">Cập nhật thông tin cá nhân</a>
+                                        }
+                                        @Html.ValidationMessageFor(model => model.recument.ProfileID, "", new { @class = "text-danger" })
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <p style="font-weight: 600;">Thư giới thiệu</p>
+                                    <div class="col-md-10" style="width: 100%;">
+                                        @Html.TextAreaFor(model => model.recument.LetterInfo, new { @class = "form-control field area", @placeholder = "Viết giới thiệu ngắn gọn về bản thân (điểm mạnh, điểm yếu) và nêu rõ mong muốn, lý do làm việc tại công ty này. Đây là cách gây ấn tượng với nhà tuyển dụng nếu bạn có chưa có kinh nghiệm làm việc (hoặc CV không tốt)." })
+                                        @Html.ValidationMessageFor(model => model.recument.LetterInfo, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-offset-2 col-md-10">
+                                        <input type="submit" value="Nộp hồ sơ" class="btn btn-primary" style="border-radius: 4px !important;" />
+                                    </div>
+                                </div>
+                            </div>
+                            <style>
+                                .field{
+                                    border: 1px solid #CCC !important;
+                                }
+                                .field.drop {
+                                    padding: 12px;
+                                }
+                                .field.area {
+                                    padding: 12px;  
+                                }
+                            </style>
+                        }
+                    </div>
+                        }
+
+
+
+                    </div>
+                </div>
+
+                <div class="bottom-right" style="width: 33%;">
+                    <div class="box-content p-4" style="background: #f6faff; border-radius: 4px; ">
+                        <h4>Tổng quan</h4>
+                        <div class="content">
+                            <div class="d-flex">
+                                <i class="bi bi-pencil"></i>
+                                <p style="margin-left: 12px;">@Model.Experience năm kinh nghiệm</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="bi bi-person-check"></i>
+                                <p style="margin-left: 12px;">Giới tính: @Model.Gender</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="bi bi-reception-4"></i>
+                                <p style="margin-left: 12px;">Cấp bậc: @Model.Rank</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="bi bi-person-plus"></i>
+                                <p style="margin-left: 12px;">@Model.Quantity người</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="bi bi-geo"></i>
+                                <p style="margin-left: 12px;">@Model.WorkLocation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-content p-4" style="margin-top: 24px; margin-bottom: 24px; border-radius: 4px; border: 1px solid #E7F0FA;">
+                        <h4>Công ty</h4>
+                        <div class="content">
+                            <div class="top d-flex" style="margin-bottom: 12px;">
+                                <img src="@ViewBag.Avatar" alt="" style="width: 60px; height: 60px; border-radius: 4px; border: 1px solid #E7F0FA;">
+                                <div class="top-text" style="margin-left: 12px;">
+                                    <a href="@compannyURL" style="margin: 0;font-weight: 700 ;-webkit-line-clamp: 1; max-width: 300px; overflow: hidden; text-overflow: ellipsis;">@ViewBag.CompanyName</a>
+                                    <p style="margin: 0; -webkit-line-clamp: 1; max-width: 300px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">@ViewBag.LinkCompany</p>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                @Html.Raw(ViewBag.DetailCompany)
+                            </div>
+                            <style>
+                                .bottom > p {
+                                    display: none;
+                                }
+
+                                    .bottom > p:first-child {
+                                        max-height: 100px;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        display: -webkit-box;
+                                        -webkit-box-orient: vertical;
+                                        -webkit-line-clamp: 3;
+                                    }
+                            </style>
+                            <a href="@compannyURL">Xem chi tiết </a>
+                        </div>
+                    </div>
+
+                    <div class="box-content p-4" style="margin-top: 24px; margin-bottom: 24px; border-radius: 4px; border: 1px solid #E7F0FA;">
+                        <h4>Công việc cùng công ty</h4>
+                        <div class="content">
+                            @{ 
+                                var listJobInCompany = jobDao.LisInCompany(Model.CompanyID);
+                            }
+                            @foreach(var item in listJobInCompany)
+                            {
+                                <p>@item.ID</p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

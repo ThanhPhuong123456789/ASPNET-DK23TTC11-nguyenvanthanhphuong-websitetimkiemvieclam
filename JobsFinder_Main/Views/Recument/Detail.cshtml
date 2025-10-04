@@ -1,0 +1,742 @@
+﻿@model Model.EF.Recument
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout_Manager.cshtml";
+}
+@{
+    var session = (JobsFinder_Main.Common.UserLogin)Session[JobsFinder_Main.Common.CommonConstants.USER_SESSION];
+    var hocVanDao = new Model.DAO.HocVanDao();
+    var kinhNghiemDao = new Model.DAO.KinhNghiemDao();
+    var kyNangDao = new Model.DAO.KyNangDao();
+    var chungChiDao = new Model.DAO.ChungChiDao();
+    var giaiThuongdao = new Model.DAO.GiaiThuongDao();
+    var khoaHocDao = new Model.DAO.KhoaHocDao();
+    var duAnDao = new Model.DAO.DuAnDao();
+    var sanPhamDao = new Model.DAO.SanPhamDao();
+    var hoatDongDao = new Model.DAO.HoatDongDao();
+    var recumentDao = new Model.DAO.RecumentDao();
+    var profileDao = new Model.DAO.ProfileDao();
+}
+@if (session != null)
+{
+    var profileID = recumentDao.getProfileID(Model.ID);
+    var profile = profileDao.GetByID(profileID);
+    var listHocVan = hocVanDao.ListAll(profile.UserID);
+    var listKinhNghiem = kinhNghiemDao.ListAll(profile.UserID);
+    var listKyNang = kyNangDao.ListAll(profile.UserID);
+    var listChungChi = chungChiDao.ListAll(profile.UserID);
+    var listGiaiThuong = giaiThuongdao.ListAll(profile.UserID);
+    var listKhoaHoc = khoaHocDao.ListAll(profile.UserID);
+    var listDuAn = duAnDao.ListAll(profile.UserID);
+    var listSanPham = sanPhamDao.ListAll(profile.UserID);
+    var listHoatDong = hoatDongDao.ListAll(profile.UserID);
+
+    <h5 class="mb-4">Hồ sơ ứng viên</h5>
+
+    <div class="d-flex position-relative" style="background-color: #f4f0e4; width: 100%; height: auto;">
+        <div class="profile-left" style="background-color: #acaca2 ;">
+            @if (profile.AnhCaNhan != null)
+            {
+                <img src="@profile.AnhCaNhan" />
+            }
+            else
+            {
+                <img src="~/Assets/Client/JobsFinder/img/about-2.jpg" />
+            }
+            <div class="position-absolute d-flex justify-content-center px-3 flex-column" style="top: 150px; background-color: rgba(76, 166, 168, 0.7); width: 200px; height: 100px;">
+                @if (profile.HoVaTen != null)
+                {
+                    <h4>@profile.HoVaTen</h4>
+                }
+                else
+                {
+                    <h4>Name Example</h4>
+                }
+                @if (profile.GioiTinh != null)
+                {
+                    <p>Giới tính: @profile.GioiTinh</p>
+                }
+                else
+                {
+                    <p>Giới tính: </p>
+                }
+            </div>
+            <div class="profile-content px-3 my-3">
+                <h4>Liên hệ</h4>
+                <div class="my-2">
+                    <div class="profile-boxInfo d-flex flex-row align-items-center">
+                        <i class="bi bi-envelope"></i>
+                        @if (profile.Email != null)
+                        {
+                            <p>@profile.Email</p>
+                        }
+                        else
+                        {
+                            <p>Example@gmail.com</p>
+                        }
+                    </div>
+                    <div class="profile-boxInfo d-flex flex-row align-items-center">
+                        <i class="bi bi-phone"></i>
+                        @if (profile.SoDienThoai != null)
+                        {
+                            <p>@profile.SoDienThoai</p>
+                        }
+                        else
+                        {
+                            <p>0123456789</p>
+                        }
+                    </div>
+                    <div class="profile-boxInfo d-flex flex-row">
+                        <i class="bi bi-geo"></i>
+                        @if (profile.DiaChiHienTai != null)
+                        {
+                            <p style="width: 145px;">@profile.DiaChiHienTai</p>
+                        }
+                        else
+                        {
+                            <p style="width: 145px;">448 Lê Văn Việt, Tăng Nhơn Phú A, TP. Thủ Đức, TP. Hồ Chí Minh</p>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="profile-content px-3 my-3">
+                <h4>About Us</h4>
+                <div class="my-2">
+                    <div class="profile-boxInfo d-flex flex-row align-items-center">
+                        @if (profile.GioiThieu != null)
+                        {
+                            <p style="width: 145px;">@profile.GioiThieu</p>
+                        }
+                        else
+                        {
+                            <p style="width: 145px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profile-right py-3">
+            <div class="profile-content px-3 my-3">
+                <h4>Học vấn</h4>
+                <div class="my-2">
+                    @if (listHocVan.Count == 0)
+                    {
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        foreach (var item in listHocVan)
+                        {
+                            <div class="d-flex">
+                                <div class="d-flex flex-column">
+                                    <p style="width: 150px; color: #4CA6A8; ">@item.ChuyenNganh</p>
+                                    <p style="font-family: 'Crimson Text', serif; font-size: 14px;">@item.NamBatDau - @item.NamKetThuc</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <p class="dot"></p>
+                                    <p class="line"></p>
+                                </div>
+                                <div class="mx-2">
+                                    <p style="font-family: 'Crimson Text', serif; font-size: 16px;">@item.Truong</p>
+                                    <p class="py-2">@item.MoTaChiTiet</p>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+            <div class="profile-content px-3 my-3">
+                <h4>Kinh nghiệm</h4>
+                <div class="my-2">
+                    @if (listKinhNghiem.Count == 0)
+                    {
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        foreach (var item in listKinhNghiem)
+                        {
+                            <div class="d-flex">
+                                <div class="d-flex flex-column">
+                                    <p style="width: 150px; color: #4CA6A8; ">@item.ChucVu</p>
+                                    <p style="font-family: 'Crimson Text', serif; font-size: 14px;">@item.NamBatDau - @item.NamKetThuc</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <p class="dot"></p>
+                                    <p class="line"></p>
+                                </div>
+                                <div class="mx-2">
+                                    <p style="font-family: 'Crimson Text', serif; font-size: 16px;">@item.CongTy</p>
+                                    <p class="py-2">@item.MoTaChiTiet</p>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+
+            <div class="profile-content px-3 my-3">
+                <h4>Chứng chỉ</h4>
+                <div class="my-2">
+                    @if (listChungChi.Count == 0)
+                    {
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        foreach (var item in listChungChi)
+                        {
+                            <div class="d-flex">
+                                <div class="d-flex flex-column">
+                                    <p style="width: 150px; color: #4CA6A8; ">@item.TenChungChi</p>
+                                    <p style="font-family: 'Crimson Text', serif; font-size: 14px;">@item.NamXacThuc - @item.NamHetHan</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <p class="dot"></p>
+                                    <p class="line"></p>
+                                </div>
+                                <div class="mx-2">
+                                    <p style="font-family: 'Crimson Text', serif; font-size: 16px;">@item.ToChuc</p>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+            <div class="profile-content px-3 my-3">
+                <h4>Giải thưởng</h4>
+                <div class="my-2">
+                    @if (listGiaiThuong.Count == 0)
+                    {
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        foreach (var item in listGiaiThuong)
+                        {
+                            <div class="d-flex">
+                                <div class="d-flex flex-column">
+                                    <p style="width: 150px; color: #4CA6A8; ">@item.TenGiaiThuong</p>
+                                    <p style="font-family: 'Crimson Text', serif; font-size: 14px;">@item.ThangNhan - @item.NamNhan</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <p class="dot"></p>
+                                    <p class="line"></p>
+                                </div>
+                                <div class="mx-2">
+                                    <p style="font-family: 'Crimson Text', serif; font-size: 16px;">@item.ToChuc</p>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+            <div class="profile-content px-3 my-3">
+                <h4>Khóa học</h4>
+                <div class="my-2">
+                    @if (listKhoaHoc.Count == 0)
+                    {
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        foreach (var item in listKhoaHoc)
+                        {
+                            <div class="d-flex">
+                                <div class="d-flex flex-column">
+                                    <p style="width: 150px; color: #4CA6A8; ">@item.TenKhoaHoc</p>
+                                    <p style="font-family: 'Crimson Text', serif; font-size: 14px;">@item.NamBatDau - @item.NamKetThuc</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <p class="dot"></p>
+                                    <p class="line"></p>
+                                </div>
+                                <div class="mx-2">
+                                    <p style="font-family: 'Crimson Text', serif; font-size: 16px;">@item.ToChuc</p>
+                                    <p class="py-2">@item.MoTaChiTiet</p>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+            <div class="profile-content px-3 my-3">
+                <h4>Dự án</h4>
+                <div class="my-2">
+                    @if (listDuAn.Count == 0)
+                    {
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        foreach (var item in listDuAn)
+                        {
+                            <div class="d-flex">
+                                <div class="d-flex flex-column">
+                                    <p style="width: 150px; color: #4CA6A8; ">@item.TenDuAn</p>
+                                    <p style="font-family: 'Crimson Text', serif; font-size: 14px;">@item.NamBatDau - @item.NamKetThuc</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <p class="dot"></p>
+                                    <p class="line"></p>
+                                </div>
+                                <div class="mx-2">
+                                    <p style="font-family: 'Crimson Text', serif; font-size: 16px;">@item.ViTri</p>
+                                    <p class="py-2">@item.MoTaChiTiet</p>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+            <div class="profile-content px-3 my-3">
+                <h4>Sản phẩm</h4>
+                <div class="my-2">
+                    @if (listSanPham.Count == 0)
+                    {
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        foreach (var item in listSanPham)
+                        {
+                            <div class="d-flex">
+                                <div class="d-flex flex-column">
+                                    <p style="width: 150px; color: #4CA6A8; ">@item.TheLoai</p>
+                                    <p style="font-family: 'Crimson Text', serif; font-size: 14px;">@item.ThangHoanThanh - @item.NamHoanThanh</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <p class="dot"></p>
+                                    <p class="line"></p>
+                                </div>
+                                <div class="mx-2">
+                                    <p style="font-family: 'Crimson Text', serif; font-size: 16px;">@item.TenSanPham</p>
+                                    <p class="py-2">@item.MoTaChiTiet</p>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+            <div class="profile-content px-3 my-3">
+                <h4>Hoạt động xã hội & tình nguyện</h4>
+                <div class="my-2">
+                    @if (listHoatDong.Count == 0)
+                    {
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <p style="width: 150px; color: #4CA6A8; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p style="font-family: 'Crimson Text', serif; font-size: 14px;">2021 - 2022</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="dot"></p>
+                                <p class="line"></p>
+                            </div>
+                            <div class="mx-2">
+                                <p style="font-family: 'Crimson Text', serif; font-size: 16px;">Company Name Or Business</p>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        foreach (var item in listHoatDong)
+                        {
+                            <div class="d-flex">
+                                <div class="d-flex flex-column">
+                                    <p style="width: 150px; color: #4CA6A8; ">@item.ViTriThamGia</p>
+                                    <p style="font-family: 'Crimson Text', serif; font-size: 14px;">@item.NamThamGia - @item.NamKetThuc</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <p class="dot"></p>
+                                    <p class="line"></p>
+                                </div>
+                                <div class="mx-2">
+                                    <p style="font-family: 'Crimson Text', serif; font-size: 16px;">@item.TenHoatDong</p>
+                                    <p class="py-2">@item.MoTaChiTiet</p>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .profile-left img {
+                width: 200px;
+                height: 250px;
+                object-fit: cover;
+            }
+
+            .profile-left h4, .profile-left p {
+                color: #FFF;
+                margin-bottom: 0;
+                font-family: 'Big Shoulders Display', cursive;
+            }
+
+            .profile-left .profile-content .profile-boxInfo i {
+                margin-right: 8px;
+                color: #96CFD0;
+            }
+
+            .profile-boxInfo > p {
+                margin: 0;
+                color: #FFF;
+                font-size: 12px;
+                font-family: 'Nunito', sans-serif;
+            }
+
+            .profile-content > h4 {
+                font-family: 'Crimson Text', serif;
+            }
+
+            .profile-content p {
+                font-size: 12px;
+                margin: 0;
+            }
+
+            .profile-content > div > div:last-child > div:last-child > p:last-child {
+                padding: 0 !important;
+            }
+
+            .profile-right .dot {
+                width: 12px;
+                height: 12px;
+                background-color: #5B5B5B;
+                border-radius: 6px;
+            }
+
+            .profile-right .line {
+                width: 2px;
+                height: 100%;
+                background-color: #5B5B5B;
+            }
+        </style>
+    </div>
+
+    <div class="my-4 d-flex flex-row">
+        <a href="/Recument/Confirm/@Model.ID" class="btn btn-primary" style="margin-right: 12px; width: 100%; border-radius: 4px;">Duyệt hồ sơ</a>
+        <a href="/Recument/Cance/@Model.ID" class="btn btn-danger" style="margin-left: 12px; width: 100%; border-radius: 4px;">Hủy hồ sơ</a>
+    </div>
+}
+else
+{
+    { Html.RenderAction("Login", "User"); }
+}

@@ -1,0 +1,103 @@
+﻿@model PagedList.IPagedList<Model.EF.Job>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Carousel Start -->
+<div class="container-fluid p-0">
+    @{ Html.RenderAction("Carousel", "Home"); }
+</div>
+<!-- Carousel End -->
+<!-- Jobs Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="tab-class text-center wow fadeInUp d-flex" data-wow-delay="0.3s">
+            @{ Html.RenderAction("Tab_Fillter", "Job");}
+            <div class="tab-content">
+                @foreach (var job in Model)
+                {
+                    @Html.Partial("_JobItem", job)
+                }
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page, @searchString = @ViewBag.SearchString }))
+
+                <style>
+                    .pagination {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 5rem;
+                        margin: 3rem;
+                        border-radius: 0.6rem;
+                        background: #ffffff;
+                        box-shadow: 0 0.8rem 2rem rgba(90, 97, 129, 0.05);
+                    }
+
+                        .pagination li {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 8px;
+                            font-size: 14px;
+                            cursor: pointer;
+                            padding: 4px 8px !important;
+                            border-radius: 8px;
+                            font-weight: 700;
+                            border-radius: 0.4rem;
+                        }
+
+                            .pagination li:hover a {
+                                color: #4CA6A8;
+                            }
+
+                        .pagination .active {
+                            color: #ffffff;
+                            background: #4CA6A8;
+                            font-weight: 600;
+                            border: 1px solid #4CA6A8;
+                        }
+
+                        .pagination .PagedList-skipToPrevious, .pagination .PagedList-skipToNext {
+                            color: #2B9BFF;
+                            pointer-events: none;
+                            font-size: 20px;
+                        }
+                </style>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Jobs End -->
+
+<!-- Category Start -->
+<div class="container-xxl py-1 jobsCategory py-5" style="background: #E7F0FA;">
+    <div class="container">
+        <div class="title d-flex">
+            <h4 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Danh mục</h4>
+            <a href="/danh-muc-cong-viec" class="button" style="font-size: 14px; height: max-content; border: none; background: none; color: #25316D;">
+                Xem tất cả
+                <i class="bi bi-arrow-right-short"></i>
+            </a>
+        </div>
+        @{ Html.RenderAction("ListJobCategry", "JobCategory"); }
+    </div>
+</div>
+<!-- Category End -->
+
+<div class="container-xxl py-5 box-categoryJob">
+    <div class="container">
+        <div class="title d-flex">
+            <h4 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Ngành nghề phổ biến</h4>
+            <a href="/nganh-nghe" class="button" style="font-size: 14px; height: max-content; border: none; background: none; color: #25316D;">
+                Xem tất cả
+                <i class="bi bi-arrow-right-short"></i>
+            </a>
+        </div>
+
+        <div class="tab-content" data-wow-delay="0.3s">
+            @{ Html.RenderAction("ListCareer", "Career"); }
+        </div>
+    </div>
+</div>
