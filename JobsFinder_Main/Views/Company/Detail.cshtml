@@ -1,0 +1,72 @@
+﻿@model Model.EF.Company
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-xxl pt-5">
+    <div class="container">
+        <div class="title d-flex">
+            <h4 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Chi tiết công ty</h4>
+        </div>
+        <div class="detail-job">
+            <div class="box-top d-flex justify-content-between">
+                <div class="info-job">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="@Model.Avatar" alt="" style="width: 80px; height: 80px; border-radius: 8px; border: 1px solid #E7F0FA; margin-right: 24px;">
+                        <div class="name-job">
+                            <h3>@Model.Name</h3>
+                            <div class="d-flex link">
+                                <div class="content d-flex align-items-center">
+                                    <i class="bi bi-globe"></i>
+                                    <h6 style="margin: 0; margin-left: 8px;">@Model.LinkPage</h6>
+                                </div>
+                                <div class="content d-flex align-items-center" style="margin-left: 32px;">
+                                    <i class="bi bi-people"></i>
+                                    <h6 style="margin: 0; margin-left: 8px;">@Model.Employees Nhân viên</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center box-action">
+                    <div class="d-flex mb-3">
+                        <a class="btn btn-primary btn-apply" href="">Theo dõi công ty</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-bottom d-flex mt-5 mb-5 justify-content-between">
+                <div class="bottom-left" style="max-width: 65%;">
+                    <div class="box-content p-4" style="margin-bottom: 24px; background: #f6faff; border-radius: 4px; ">
+                        <h4>Mô tả</h4>
+                        <div class="content">
+                            <p>@Html.Raw(Model.Description)</p>
+                        </div>
+                    </div>
+
+                    <!-- Jobs Start -->
+                    <div class="container-xxl py-5">
+                        <h4 class="mb-4">Công ty đang tuyển dụng</h4>
+                        @{ Html.RenderAction("JobInCompany", "Company");}
+
+                    </div>
+                    <!-- Jobs End -->
+                </div>
+                <div class="bottom-right" style="width: 33%;">
+                    <div class="box-content p-4" style="background: #f6faff; border-radius: 4px; ">
+                        <h4>Vị trí</h4>
+                        <div class="content">
+                            <div class="d-flex">
+                                <i class="bi bi-geo"></i>
+                                <p style="margin-left: 12px;">448 Lê Văn Việt, Tăng Nhơn Phú A, TP Thủ Đức, TP Hồ Chí Minh</p>
+                            </div>
+                            <div style="width: 100%; height: auto;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

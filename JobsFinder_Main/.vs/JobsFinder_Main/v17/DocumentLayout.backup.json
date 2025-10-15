@@ -1,12 +1,87 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ICT\\Downloads\\PhuongNVT\\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\\JobsFinder_Main\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\\JobsFinder_Main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-webfindjob\\jobsfinder_main\\areas\\admin\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:areas\\admin\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-webfindjob\\jobsfinder_main\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C1A5FE7-0DFD-49FE-9466-E8C6BAB92152}|..\\Model\\Model.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-webfindjob\\model\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-webfindjob\\jobsfinder_main\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\\Model\\App.config",
+              "RelativeDocumentMoniker": "..\\Model\\App.config",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\\Model\\App.config",
+              "RelativeToolTip": "..\\Model\\App.config",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-15T16:31:46.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\\JobsFinder_Main\\Views\\Web.config",
+              "RelativeDocumentMoniker": "Views\\Web.config",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\\JobsFinder_Main\\Views\\Web.config",
+              "RelativeToolTip": "Views\\Web.config",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-15T16:15:07.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "web.config",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\\JobsFinder_Main\\Areas\\Admin\\Views\\web.config",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\web.config",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\\JobsFinder_Main\\Areas\\Admin\\Views\\web.config",
+              "RelativeToolTip": "Areas\\Admin\\Views\\web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-15T16:14:39.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\\JobsFinder_Main\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\\JobsFinder_Main\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-15T16:10:19.045Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

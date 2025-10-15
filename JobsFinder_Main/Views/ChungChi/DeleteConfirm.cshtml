@@ -1,0 +1,43 @@
+﻿@model Model.EF.ChungChi
+
+@{
+    var session = (JobsFinder_Main.Common.UserLogin)Session[JobsFinder_Main.Common.CommonConstants.USER_SESSION];
+}
+
+@if (session == null)
+{
+    { Html.RenderAction("Login", "User"); }
+}
+else
+{
+    <div id="formDeleteChungChi@(Model.ID)" class="p-4 form-profile form-delete">
+        <div class="d-flex flex-column align-items-center">
+            <img style="width: 120px; height: 120px; object-fit: cover;" src="~/Assets/Client/JobsFinder/img/DeleteIcon.png" />
+            @using (Html.BeginForm("DeleteConfirm", "ChungChi", FormMethod.Post, new {@class = "box-delete"}))
+            {
+                @Html.AntiForgeryToken()
+
+                <p style="font-size:  16px; font-weight: 600;">Bạn có muốn xóa mục này?</p>
+
+                <div class="form-actions no-color d-flex justify-content-between" style="width: 100%">
+                    <button type="reset" class="btn btn-outline-primary btn-cance" style="border-radius: 4px; width: 45%;">Hủy</button>
+                    <button type="submit" class="btn btn-danger" style="border-radius: 4px; width: 45%;">Xóa</button>
+                </div>
+            }
+        </div>
+    </div>
+
+    <style>
+        .form-delete {
+            width: 400px !important;
+            margin-top: 200px !important;
+        }
+        .form-delete .box-delete {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+}

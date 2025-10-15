@@ -1,0 +1,31 @@
+﻿
+@model Model.EF.Company
+    
+<div class="row-item-company position-relative">
+    <img class="background" src="@Model.Background" alt="@Model.Background">
+    <img class="avatar position-absolute" src="@Model.Avatar" alt="@Model.Avatar">
+    <div class="company-content position-absolute px-3" style="top: 154px">
+        <div class="box-name">
+            <a href="cong-ty/@Model.MetaTitle-@Model.ID" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">@Model.Name</a>
+        </div>
+        <div class="box-description">
+            @Html.Raw(Model.Description)
+        </div>
+        <style>
+            .box-description, .box-name {
+                width: 380px;
+                height: 150px;
+                overflow: hidden;
+            }
+            .box-name {
+                height: max-content;
+                display: flex;
+            }
+            .box-name a {
+                font-size: 15px;
+                font-weight: 800;
+                text-transform: uppercase;
+            }
+        </style>
+    </div>
+</div>

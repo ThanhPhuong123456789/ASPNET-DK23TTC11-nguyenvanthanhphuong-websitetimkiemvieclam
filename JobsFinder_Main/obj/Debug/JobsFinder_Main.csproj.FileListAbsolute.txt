@@ -1,0 +1,575 @@
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\JobsFinder_Main.dll.config
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\JobsFinder_Main.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\JobsFinder_Main.pdb
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\csc.exe
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\csc.exe.config
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\csc.rsp
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\csi.exe
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\csi.exe.config
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\csi.rsp
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\vbc.exe
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\vbc.exe.config
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\vbc.rsp
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\VBCSCompiler.exe
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\Model.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\Model.pdb
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\Model.dll.config
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Web.Helpers.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Web.Mvc.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Web.Optimization.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Web.Razor.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Web.WebPages.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Web.WebPages.Deployment.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Web.WebPages.Razor.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\Antlr3.Runtime.pdb
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\EntityFramework.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\obj\Debug\JobsFinder_Main.csproj.AssemblyReference.cache
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\obj\Debug\JobsFinder_Main.csproj.CoreCompileInputs.cache
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\obj\Debug\JobsFinder_Main.csproj.CopyComplete
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\obj\Debug\JobsFinder_Main.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\obj\Debug\JobsFinder_Main.pdb
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\EntityFramework.SqlServer.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\PagedList.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\PagedList.Mvc.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\Antlr3.Runtime.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\WebGrease.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\EntityFramework.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\EntityFramework.SqlServer.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\PagedList.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\PagedList.Mvc.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Web.Helpers.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Web.Mvc.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Web.Optimization.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Web.Razor.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Web.WebPages.Deployment.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Web.WebPages.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Web.WebPages.Razor.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\Markdown.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\MarkdownSharp.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\MarkdownSharp.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\NLog.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\NLog.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\OpenCage.Geocode.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\ServiceStack.Text.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\ServiceStack.Text.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Buffers.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Memory.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Numerics.Vectors.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Buffers.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Memory.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Numerics.Vectors.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\ServiceStack.Client.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\ServiceStack.Interfaces.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\ServiceStack.Client.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\ServiceStack.Common.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\ServiceStack.Common.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\ServiceStack.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\ServiceStack.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\CountryData.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Text.Encodings.Web.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Text.Json.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.ValueTuple.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\CountryData.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Text.Encodings.Web.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Text.Json.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.ValueTuple.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\System.Buffers.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\System.Memory.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\BotDetect.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\BotDetect.Web.Mvc.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Data.SQLite.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\System.Data.SQLite.xml
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\Facebook.dll
+C:\Users\hung5\OneDrive\Máy tính\Đồ án lập trình web\JobsFinder\JobsFinder_Main\bin\Facebook.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\JobsFinder_Main.dll.config
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\JobsFinder_Main.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\JobsFinder_Main.pdb
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\csc.exe
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\csc.exe.config
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\csc.rsp
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\csi.exe
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\csi.exe.config
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\csi.rsp
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\System.Buffers.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\System.Collections.Immutable.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\System.Memory.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\System.Numerics.Vectors.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\System.Reflection.Metadata.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\vbc.exe
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\vbc.exe.config
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\vbc.rsp
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\VBCSCompiler.exe
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\roslyn\VBCSCompiler.exe.config
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\Antlr3.Runtime.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\BotDetect.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\BotDetect.Web.Mvc.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\CountryData.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\EntityFramework.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\EntityFramework.SqlServer.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\Facebook.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\Markdown.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\MarkdownSharp.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\Microsoft.Extensions.Primitives.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\Microsoft.Web.Infrastructure.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\Model.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\NLog.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\OpenCage.Geocode.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\PagedList.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\PagedList.Mvc.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\ServiceStack.Client.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\ServiceStack.Common.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\ServiceStack.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\ServiceStack.Interfaces.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\ServiceStack.Text.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Buffers.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Data.SQLite.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Memory.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Numerics.Vectors.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Text.Encodings.Web.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Text.Json.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Threading.Tasks.Extensions.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.ValueTuple.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Web.Helpers.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Web.Mvc.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Web.Optimization.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Web.Razor.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Web.WebPages.Deployment.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Web.WebPages.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Web.WebPages.Razor.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\WebGrease.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\Model.pdb
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\Model.dll.config
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\CountryData.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\EntityFramework.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\EntityFramework.SqlServer.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\Facebook.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\MarkdownSharp.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\Microsoft.Extensions.Primitives.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\NLog.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\PagedList.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\PagedList.Mvc.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\ServiceStack.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\ServiceStack.Client.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\ServiceStack.Common.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\ServiceStack.Text.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Buffers.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Data.SQLite.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Memory.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Numerics.Vectors.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Text.Encodings.Web.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Text.Json.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Threading.Tasks.Extensions.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.ValueTuple.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Web.Helpers.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Web.Mvc.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Web.Optimization.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Web.Razor.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Web.WebPages.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Web.WebPages.Deployment.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\System.Web.WebPages.Razor.xml
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\bin\Antlr3.Runtime.pdb
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\obj\Debug\JobsFinder_Main.csproj.AssemblyReference.cache
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\obj\Debug\JobsFinder_Main.csproj.CoreCompileInputs.cache
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\obj\Debug\JobsFinder_Main.csproj.CopyComplete
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\obj\Debug\JobsFinder_Main.dll
+D:\Download\Nhom10_WebTD-TKVL-20230601T022334Z-001\Nhom10_WebTD-TKVL\NHOM10_WebTDTKVL\JobsFinder\JobsFinder_Main\obj\Debug\JobsFinder_Main.pdb
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\JobsFinder_Main.dll.config
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\JobsFinder_Main.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\JobsFinder_Main.pdb
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\csc.exe
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\csc.exe.config
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\csc.rsp
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\csi.exe
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\csi.exe.config
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\csi.rsp
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\System.Buffers.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\System.Memory.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\vbc.exe
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\vbc.exe.config
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\vbc.rsp
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\VBCSCompiler.exe
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\Antlr3.Runtime.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\BotDetect.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\BotDetect.Web.Mvc.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\CountryData.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\EntityFramework.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\EntityFramework.SqlServer.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\Facebook.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\Markdown.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\MarkdownSharp.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\Model.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\NLog.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\OpenCage.Geocode.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\PagedList.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\PagedList.Mvc.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\ServiceStack.Client.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\ServiceStack.Common.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\ServiceStack.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\ServiceStack.Interfaces.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\ServiceStack.Text.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Buffers.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Data.SQLite.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Memory.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Numerics.Vectors.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Text.Encodings.Web.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Text.Json.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.ValueTuple.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Web.Helpers.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Web.Mvc.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Web.Optimization.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Web.Razor.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Web.WebPages.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Web.WebPages.Razor.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\WebGrease.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\Model.pdb
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\Model.dll.config
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\CountryData.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\EntityFramework.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\EntityFramework.SqlServer.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\Facebook.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\MarkdownSharp.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\NLog.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\PagedList.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\PagedList.Mvc.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\ServiceStack.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\ServiceStack.Client.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\ServiceStack.Common.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\ServiceStack.Text.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Buffers.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Data.SQLite.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Memory.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Numerics.Vectors.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Text.Encodings.Web.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Text.Json.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.ValueTuple.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Web.Helpers.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Web.Mvc.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Web.Optimization.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Web.Razor.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Web.WebPages.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\System.Web.WebPages.Razor.xml
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\bin\Antlr3.Runtime.pdb
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\obj\Debug\JobsFinder_Main.csproj.AssemblyReference.cache
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\obj\Debug\JobsFinder_Main.csproj.CoreCompileInputs.cache
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\obj\Debug\JobsFind.B0D86D47.Up2Date
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\obj\Debug\JobsFinder_Main.dll
+C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\JobsFinder_Main\obj\Debug\JobsFinder_Main.pdb
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\JobsFinder_Main.dll.config
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\JobsFinder_Main.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\JobsFinder_Main.pdb
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\csc.exe
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\csc.exe.config
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\csc.rsp
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\csi.exe
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\csi.exe.config
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\csi.rsp
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\System.Buffers.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\System.Memory.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\vbc.exe
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\vbc.exe.config
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\vbc.rsp
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\VBCSCompiler.exe
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\Antlr3.Runtime.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\BotDetect.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\BotDetect.Web.Mvc.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\CountryData.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\EntityFramework.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\EntityFramework.SqlServer.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\Facebook.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\Markdown.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\MarkdownSharp.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\Model.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\NLog.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\OpenCage.Geocode.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\PagedList.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\PagedList.Mvc.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\ServiceStack.Client.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\ServiceStack.Common.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\ServiceStack.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\ServiceStack.Interfaces.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\ServiceStack.Text.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Buffers.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Data.SQLite.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Memory.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Numerics.Vectors.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Text.Encodings.Web.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Text.Json.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.ValueTuple.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Web.Helpers.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Web.Mvc.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Web.Optimization.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Web.Razor.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Web.WebPages.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Web.WebPages.Razor.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\WebGrease.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\Model.pdb
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\Model.dll.config
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\CountryData.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\EntityFramework.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\EntityFramework.SqlServer.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\Facebook.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\MarkdownSharp.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\NLog.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\PagedList.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\PagedList.Mvc.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\ServiceStack.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\ServiceStack.Client.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\ServiceStack.Common.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\ServiceStack.Text.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Buffers.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Data.SQLite.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Memory.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Numerics.Vectors.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Text.Encodings.Web.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Text.Json.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.ValueTuple.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Web.Helpers.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Web.Mvc.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Web.Optimization.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Web.Razor.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Web.WebPages.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\System.Web.WebPages.Razor.xml
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\bin\Antlr3.Runtime.pdb
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\obj\Debug\JobsFinder_Main.csproj.AssemblyReference.cache
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\obj\Debug\JobsFinder_Main.csproj.CoreCompileInputs.cache
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\obj\Debug\JobsFind.B0D86D47.Up2Date
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\obj\Debug\JobsFinder_Main.dll
+C:\Users\ICT\Downloads\PhuongNVT\ASPNET-DK23TTC11B-NguyenVanThanhPhuong\JobsFinder_Main\obj\Debug\JobsFinder_Main.pdb
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\JobsFinder_Main.dll.config
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\JobsFinder_Main.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\JobsFinder_Main.pdb
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\csc.exe
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\csc.exe.config
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\csc.rsp
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\csi.exe
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\csi.exe.config
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\csi.rsp
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\Microsoft.Managed.Core.targets
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\System.Buffers.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\System.Collections.Immutable.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\System.Memory.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\System.Numerics.Vectors.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\System.Reflection.Metadata.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\vbc.exe
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\vbc.exe.config
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\vbc.rsp
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\VBCSCompiler.exe
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\roslyn\VBCSCompiler.exe.config
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\Antlr3.Runtime.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\BotDetect.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\BotDetect.Web.Mvc.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\CountryData.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\EntityFramework.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\EntityFramework.SqlServer.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\Facebook.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\Markdown.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\MarkdownSharp.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\Microsoft.Extensions.Primitives.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\Microsoft.Web.Infrastructure.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\Model.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\NLog.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\OpenCage.Geocode.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\PagedList.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\PagedList.Mvc.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\ServiceStack.Client.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\ServiceStack.Common.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\ServiceStack.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\ServiceStack.Interfaces.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\ServiceStack.Text.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Buffers.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Data.SQLite.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Diagnostics.DiagnosticSource.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Memory.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Numerics.Vectors.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Text.Encodings.Web.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Text.Json.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Threading.Tasks.Extensions.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.ValueTuple.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Web.Helpers.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Web.Mvc.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Web.Optimization.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Web.Razor.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Web.WebPages.Deployment.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Web.WebPages.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Web.WebPages.Razor.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\WebGrease.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\Model.pdb
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\Model.dll.config
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\CountryData.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\EntityFramework.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\EntityFramework.SqlServer.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\Facebook.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\MarkdownSharp.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\Microsoft.Extensions.Primitives.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\NLog.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\PagedList.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\PagedList.Mvc.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\ServiceStack.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\ServiceStack.Client.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\ServiceStack.Common.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\ServiceStack.Text.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Buffers.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Data.SQLite.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Diagnostics.DiagnosticSource.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Memory.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Numerics.Vectors.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Text.Encodings.Web.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Text.Json.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Threading.Tasks.Extensions.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.ValueTuple.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Web.Helpers.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Web.Mvc.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Web.Optimization.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Web.Razor.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Web.WebPages.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Web.WebPages.Deployment.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\System.Web.WebPages.Razor.xml
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\bin\Antlr3.Runtime.pdb
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\obj\Debug\JobsFinder_Main.csproj.AssemblyReference.cache
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\obj\Debug\JobsFinder_Main.csproj.CoreCompileInputs.cache
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\obj\Debug\JobsFind.B0D86D47.Up2Date
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\obj\Debug\JobsFinder_Main.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\JobsFinder_Main\obj\Debug\JobsFinder_Main.pdb

@@ -1,0 +1,545 @@
+﻿@model List<Model.EF.Job>
+@using Model.DAO;
+
+@foreach (var job in Model)
+{
+    var jobDao = new JobDao();
+
+    var subTitle = jobDao.SubTitle(job.CompanyID, job.UserID);
+    ViewBag.SubTitle = subTitle;
+
+    var categoryName = jobDao.GetCategory(job.CategoryID);
+    ViewBag.Category = categoryName;
+
+    var formatSalary = jobDao.FormatSalary(job.ID);
+    ViewBag.FormatSalary = formatSalary;
+
+    var formatTime = jobDao.FormatTime(job.ID);
+    ViewBag.FormatTime = formatTime;
+
+    var countTime = jobDao.CountTime(job.ID);
+    ViewBag.CountTime = countTime;
+
+    var getAvatar = jobDao.GetAvatarFromCompany(job.CompanyID, job.UserID);
+    if (getAvatar == null)
+    {
+        ViewBag.Getavatar = "./Assets/Client/JobsFinder/img/Logo.png";
+    }
+    else
+    {
+        ViewBag.GetAvatar = getAvatar;
+    }
+
+    var url = "/cong-viec/" + job.MetaTitle + "-" + job.ID;
+    <div class="job-item mb-4" style="padding: 24px;">
+        <div class="row g-4">
+            <div class="col-sm-12 col-md-8 d-flex">
+                <img class="flex-shrink-0 img-fluid border rounded img-company" src="@ViewBag.GetAvatar" alt="@job.Name" style="width: 40px; height: 40px;">
+                <div class="text-start ps-4">
+                    <div class="item-content-top">
+                        <div class="title-item">
+                            <div class="jobs-name d-flex align-items-center">
+                                <a href="@url" style="font-weight: 700; font-size: 18px;" class="m-0">@job.Name</a>
+                            </div>
+                            <a href="#" style="text-decoration: underline; font-size: 14px; text-transform: uppercase;" class="mb-3">@ViewBag.SubTitle</a>
+                        </div>
+                    </div>
+
+                    <div class="item-content-property">
+                        <span class="text-truncate me-3">
+                            <i class="bi bi-geo-alt"></i>
+                            @job.WorkLocation
+                        </span>
+                        <span class="text-truncate me-3">
+                            <i class="bi bi-calendar-event"></i>
+                            @ViewBag.Category
+                        </span>
+                        <span class="text-truncate me-3">
+                            <i class="bi bi-credit-card"></i>
+                            @ViewBag.FormatSalary
+                        </span>
+                        <span class="text-truncate me-3">
+                            <i class="bi bi-clock"></i>
+                            @ViewBag.FormatTime
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center box-action">
+                <div class="d-flex mb-3">
+                    <a class="btn btn-light btn-square me-3 btn-save" href="@url"><i class="far fa-heart text-primary"></i></a>
+                    <a class="btn btn-primary btn-apply" href="">Ứng tuyển ngay</a>
+                </div>
+                <span class="text-truncate">
+                    <i class="bi bi-clock-history"></i>
+                    @ViewBag.CountTime
+                </span>
+            </div>
+        </div>
+    </div>
+}
+
+<!--<div class="container">
+    <div class="title d-flex">
+        <h4 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Công việc trong công ty</h4>
+    </div>
+    <div class="tab-class text-center wow fadeInUp d-flex" data-wow-delay="0.3s">
+        <div class="tab-content">
+            <div id="tab-1" class="tab-pane fade show p-0 active">
+                <div class="job-item mb-4">
+                    <div class="row g-4">
+                        <div class="col-sm-12 col-md-8 d-flex">
+                            <img class="flex-shrink-0 img-fluid border rounded img-company" src="img/com-logo-3.jpg" alt="">
+                            <div class="text-start ps-4">
+                                <div class="item-content-top">
+                                    <div class="title-item">
+                                        <div class="jobs-name d-flex align-items-center mb-2">
+                                            <h5 style="font-weight: 500;" class="m-0">Senior Full-Stack Web Developer</h5>-->
+<!-- <div class="tag-new">
+    <p>New Job</p>
+</div> -->
+<!--</div>
+                        <h6 style="text-decoration: underline;" class="mb-3">Microsoft Corporation - American multinational technology company</h6>
+                    </div>
+                </div>
+
+                <div class="item-content-property">
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-geo-alt"></i>
+                        Hà nội
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-calendar-event"></i>
+                        Toàn thời gian
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-credit-card"></i>
+                        12 - 18 triệu
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-clock"></i>
+                        3 giờ trước
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center box-action">
+            <div class="d-flex mb-3">
+                <a class="btn btn-light btn-square me-3 btn-save" href=""><i class="far fa-heart text-primary"></i></a>
+                <a class="btn btn-primary btn-apply" style="padding: 4px 12px;" href="">Ứng tuyển ngay</a>
+            </div>
+            <span class="text-truncate">
+                <i class="bi bi-clock-history"></i>
+                Hạn nộp: 23-12-2022
+            </span>
+        </div>
+    </div>
+</div>
+<div class="job-item mb-4">
+    <div class="row g-4">
+        <div class="col-sm-12 col-md-8 d-flex">
+            <img class="flex-shrink-0 img-fluid border rounded img-company" src="img/com-logo-2.jpg" alt="">
+            <div class="text-start ps-4">
+                <div class="item-content-top">
+                    <div class="title-item">
+                        <div class="jobs-name d-flex align-items-center mb-2">
+                            <h5 style="font-weight: 500;" class="m-0">Digital Marketing Specialist</h5>ß-->
+<!-- <div class="tag-new">
+    <p>New Job</p>
+</div> -->
+<!--</div>
+                        <h6 style="text-decoration: underline;" class="mb-3">Software Engineer</h6>
+                    </div>
+                </div>
+
+                <div class="item-content-property">
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-geo-alt"></i>
+                        Hà nội
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-calendar-event"></i>
+                        Toàn thời gian
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-credit-card"></i>
+                        12 - 18 triệu
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-clock"></i>
+                        3 giờ trước
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center box-action">
+            <div class="d-flex mb-3">
+                <a class="btn btn-light btn-square me-3 btn-save" href=""><i class="far fa-heart text-primary"></i></a>
+                <a class="btn btn-primary btn-apply" style="padding: 4px 12px;" href="">Ứng tuyển ngay</a>
+            </div>
+            <span class="text-truncate">
+                <i class="bi bi-clock-history"></i>
+                Hạn nộp: 23-12-2022
+            </span>
+        </div>
+    </div>
+</div>
+<div class="job-item mb-4">
+    <div class="row g-4">
+        <div class="col-sm-12 col-md-8 d-flex">
+            <img class="flex-shrink-0 img-fluid border rounded img-company" src="img/com-logo-5.jpg" alt="">
+            <div class="text-start ps-4">
+                <div class="item-content-top">
+                    <div class="title-item">
+                        <div class="jobs-name d-flex align-items-center mb-2">
+                            <h5 style="font-weight: 500;" class="m-0">Digital Marketing Specialist</h5>-->
+<!-- <div class="tag-new">
+    <p>New Job</p>
+</div> -->
+<!--</div>
+                        <h6 style="text-decoration: underline;" class="mb-3">Amazon.com, Inc. - American multinational technology and e-commerce company</h6>
+                    </div>
+                </div>
+
+                <div class="item-content-property">
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-geo-alt"></i>
+                        Hà nội
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-calendar-event"></i>
+                        Toàn thời gian
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-credit-card"></i>
+                        12 - 18 triệu
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-clock"></i>
+                        3 giờ trước
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center box-action">
+            <div class="d-flex mb-3">
+                <a class="btn btn-light btn-square me-3 btn-save" href=""><i class="far fa-heart text-primary"></i></a>
+                <a class="btn btn-primary btn-apply" style="padding: 4px 12px;" href="">Ứng tuyển ngay</a>
+            </div>
+            <span class="text-truncate">
+                <i class="bi bi-clock-history"></i>
+                Hạn nộp: 23-12-2022
+            </span>
+        </div>
+    </div>
+</div>
+<div class="job-item mb-4">
+    <div class="row g-4">
+        <div class="col-sm-12 col-md-8 d-flex">
+            <img class="flex-shrink-0 img-fluid border rounded img-company" src="img/com-logo-4.jpg" alt="">
+            <div class="text-start ps-4">
+                <div class="item-content-top">
+                    <div class="title-item">
+                        <div class="jobs-name d-flex align-items-center mb-2">
+                            <h5 style="font-weight: 500;" class="m-0">Human Resources Manager</h5>
+                            <div class="tag-new">
+                                <p>New Job</p>
+                            </div>
+                        </div>
+                        <h6 style="text-decoration: underline;" class="mb-3">Apple Inc. - American multinational technology company</h6>
+                    </div>
+                </div>
+
+                <div class="item-content-property">
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-geo-alt"></i>
+                        Hà nội
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-calendar-event"></i>
+                        Toàn thời gian
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-credit-card"></i>
+                        12 - 18 triệu
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-clock"></i>
+                        3 giờ trước
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center box-action">
+            <div class="d-flex mb-3">
+                <a class="btn btn-light btn-square me-3 btn-save" href=""><i class="far fa-heart text-primary"></i></a>
+                <a class="btn btn-primary btn-apply" style="padding: 4px 12px;" href="">Ứng tuyển ngay</a>
+            </div>
+            <span class="text-truncate">
+                <i class="bi bi-clock-history"></i>
+                Hạn nộp: 23-12-2022
+            </span>
+        </div>
+    </div>
+</div>
+<div class="job-item mb-4">
+    <div class="row g-4">
+        <div class="col-sm-12 col-md-8 d-flex">
+            <img class="flex-shrink-0 img-fluid border rounded img-company" src="img/com-logo-3.jpg" alt="">
+            <div class="text-start ps-4">
+                <div class="item-content-top">
+                    <div class="title-item">
+                        <div class="jobs-name d-flex align-items-center mb-2">
+                            <h5 style="font-weight: 500;" class="m-0">Senior Full-Stack Web Developer</h5>-->
+<!-- <div class="tag-new">
+    <p>New Job</p>
+</div> -->
+<!--</div>
+                        <h6 style="text-decoration: underline;" class="mb-3">Microsoft Corporation - American multinational technology company</h6>
+                    </div>
+                </div>
+
+                <div class="item-content-property">
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-geo-alt"></i>
+                        Hà nội
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-calendar-event"></i>
+                        Toàn thời gian
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-credit-card"></i>
+                        12 - 18 triệu
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-clock"></i>
+                        3 giờ trước
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center box-action">
+            <div class="d-flex mb-3">
+                <a class="btn btn-light btn-square me-3 btn-save" href=""><i class="far fa-heart text-primary"></i></a>
+                <a class="btn btn-primary btn-apply" style="padding: 4px 12px;" href="">Ứng tuyển ngay</a>
+            </div>
+            <span class="text-truncate">
+                <i class="bi bi-clock-history"></i>
+                Hạn nộp: 23-12-2022
+            </span>
+        </div>
+    </div>
+</div>
+<div class="job-item mb-4">
+    <div class="row g-4">
+        <div class="col-sm-12 col-md-8 d-flex">
+            <img class="flex-shrink-0 img-fluid border rounded img-company" src="img/com-logo-2.jpg" alt="">
+            <div class="text-start ps-4">
+                <div class="item-content-top">
+                    <div class="title-item">
+                        <div class="jobs-name d-flex align-items-center mb-2">
+                            <h5 style="font-weight: 500;" class="m-0">Digital Marketing Specialist</h5>ß-->
+<!-- <div class="tag-new">
+    <p>New Job</p>
+</div> -->
+<!--</div>
+                        <h6 style="text-decoration: underline;" class="mb-3">Software Engineer</h6>
+                    </div>
+                </div>
+
+                <div class="item-content-property">
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-geo-alt"></i>
+                        Hà nội
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-calendar-event"></i>
+                        Toàn thời gian
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-credit-card"></i>
+                        12 - 18 triệu
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-clock"></i>
+                        3 giờ trước
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center box-action">
+            <div class="d-flex mb-3">
+                <a class="btn btn-light btn-square me-3 btn-save" href=""><i class="far fa-heart text-primary"></i></a>
+                <a class="btn btn-primary btn-apply" style="padding: 4px 12px;" href="">Ứng tuyển ngay</a>
+            </div>
+            <span class="text-truncate">
+                <i class="bi bi-clock-history"></i>
+                Hạn nộp: 23-12-2022
+            </span>
+        </div>
+    </div>
+</div>
+<div class="job-item mb-4">
+    <div class="row g-4">
+        <div class="col-sm-12 col-md-8 d-flex">
+            <img class="flex-shrink-0 img-fluid border rounded img-company" src="img/com-logo-5.jpg" alt="">
+            <div class="text-start ps-4">
+                <div class="item-content-top">
+                    <div class="title-item">
+                        <div class="jobs-name d-flex align-items-center mb-2">
+                            <h5 style="font-weight: 500;" class="m-0">Digital Marketing Specialist</h5>-->
+<!-- <div class="tag-new">
+    <p>New Job</p>
+</div> -->
+<!--</div>
+                        <h6 style="text-decoration: underline;" class="mb-3">Amazon.com, Inc. - American multinational technology and e-commerce company</h6>
+                    </div>
+                </div>
+
+                <div class="item-content-property">
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-geo-alt"></i>
+                        Hà nội
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-calendar-event"></i>
+                        Toàn thời gian
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-credit-card"></i>
+                        12 - 18 triệu
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-clock"></i>
+                        3 giờ trước
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center box-action">
+            <div class="d-flex mb-3">
+                <a class="btn btn-light btn-square me-3 btn-save" href=""><i class="far fa-heart text-primary"></i></a>
+                <a class="btn btn-primary btn-apply" style="padding: 4px 12px;" href="">Ứng tuyển ngay</a>
+            </div>
+            <span class="text-truncate">
+                <i class="bi bi-clock-history"></i>
+                Hạn nộp: 23-12-2022
+            </span>
+        </div>
+    </div>
+</div>
+<div class="job-item mb-4">
+    <div class="row g-4">
+        <div class="col-sm-12 col-md-8 d-flex">
+            <img class="flex-shrink-0 img-fluid border rounded img-company" src="img/com-logo-4.jpg" alt="">
+            <div class="text-start ps-4">
+                <div class="item-content-top">
+                    <div class="title-item">
+                        <div class="jobs-name d-flex align-items-center mb-2">
+                            <h5 style="font-weight: 500;" class="m-0">Human Resources Manager</h5>-->
+<!-- <div class="tag-new">
+    <p>New Job</p>
+</div> -->
+<!--</div>
+                        <h6 style="text-decoration: underline;" class="mb-3">Apple Inc. - American multinational technology company</h6>
+                    </div>
+                </div>
+
+                <div class="item-content-property">
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-geo-alt"></i>
+                        Hà nội
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-calendar-event"></i>
+                        Toàn thời gian
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-credit-card"></i>
+                        12 - 18 triệu
+                    </span>
+                    <span class="text-truncate me-3">
+                        <i class="bi bi-clock"></i>
+                        3 giờ trước
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center box-action">
+            <div class="d-flex mb-3">
+                <a class="btn btn-light btn-square me-3 btn-save" href=""><i class="far fa-heart text-primary"></i></a>
+                <a class="btn btn-primary btn-apply" style="padding: 4px 12px;" href="">Ứng tuyển ngay</a>
+            </div>
+            <span class="text-truncate">
+                <i class="bi bi-clock-history"></i>
+                Hạn nộp: 23-12-2022
+            </span>
+        </div>
+    </div>
+</div>
+<div class="job-item mb-4">
+    <div class="row g-4">
+        <div class="col-sm-12 col-md-8 d-flex">
+            <img class="flex-shrink-0 img-fluid border rounded img-company" src="img/com-logo-4.jpg" alt="">
+            <div class="text-start ps-4">
+                <div class="item-content-top">
+                    <div class="title-item">
+                        <div class="jobs-name d-flex align-items-center mb-2">
+                            <h5 style="font-weight: 500;" class="m-0">Human Resources Manager</h5>-->
+<!-- <div class="tag-new">
+    <p>New Job</p>
+</div> -->
+<!--</div>
+                                        <h6 style="text-decoration: underline;" class="mb-3">Apple Inc. - American multinational technology company</h6>
+                                    </div>
+                                </div>
+
+                                <div class="item-content-property">
+                                    <span class="text-truncate me-3">
+                                        <i class="bi bi-geo-alt"></i>
+                                        Hà nội
+                                    </span>
+                                    <span class="text-truncate me-3">
+                                        <i class="bi bi-calendar-event"></i>
+                                        Toàn thời gian
+                                    </span>
+                                    <span class="text-truncate me-3">
+                                        <i class="bi bi-credit-card"></i>
+                                        12 - 18 triệu
+                                    </span>
+                                    <span class="text-truncate me-3">
+                                        <i class="bi bi-clock"></i>
+                                        3 giờ trước
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center box-action">
+                            <div class="d-flex mb-3">
+                                <a class="btn btn-light btn-square me-3 btn-save" href=""><i class="far fa-heart text-primary"></i></a>
+                                <a class="btn btn-primary btn-apply" style="padding: 4px 12px;" href="">Ứng tuyển ngay</a>
+                            </div>
+                            <span class="text-truncate">
+                                <i class="bi bi-clock-history"></i>
+                                Hạn nộp: 23-12-2022
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="page">
+                    <li class="page_btn"><i class="bi bi-arrow-left-short"></i></li>
+                    <li class="page_numbers"> 1</li>
+                    <li class="page_numbers active">2</li>
+                    <li class="page_numbers">3</li>
+                    <li class="page_numbers">4</li>
+                    <li class="page_numbers">5</li>
+                    <li class="page_numbers">6</li>
+                    <li class="page_dots">...</li>
+                    <li class="page_numbers"> 10</li>
+                    <li class="page_btn"><i class="bi bi-arrow-right-short"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>-->
