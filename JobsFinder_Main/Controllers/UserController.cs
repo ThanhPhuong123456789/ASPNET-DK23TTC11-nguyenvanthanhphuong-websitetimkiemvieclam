@@ -63,7 +63,7 @@ namespace JobsFinder_Main.Controllers
                         Name = model.Name,
                         Phone = model.Phone,
                         Email = model.Email,
-                        Avatar = "./Assets/Client/JobsFinder/img/Logo.png",
+                        Avatar = "/../../Data/images/anh3.jpg",
                         CreatedDate = DateTime.Now,
                         Status = true
                     };

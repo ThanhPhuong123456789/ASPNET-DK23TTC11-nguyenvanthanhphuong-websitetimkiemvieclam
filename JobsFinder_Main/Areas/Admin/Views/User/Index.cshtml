@@ -16,7 +16,7 @@
 }
 
 <!-- Topbar Search -->
-@using (Html.BeginForm("Index", "User", FormMethod.Get, new {@class = "navbar-search" }))
+@using (Html.BeginForm("Index", "User", FormMethod.Get, new { @class = "navbar-search" }))
 {
     <div class="input-group">
         <input type="text" class="form-control bg-white search-input" placeholder="Tìm kiếm người dùng..."
@@ -36,17 +36,16 @@
             margin-bottom: 1rem;
         }
 
-        .navbar-search > input {
-            border: 1px solid #d1d3e2;
-        }
-            
+            .navbar-search > input {
+                border: 1px solid #d1d3e2;
+            }
     </style>
 }
 
-<!-- DataTales Example -->
+<!-- DataTales JobsFinder -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+        <h6 class="m-0 font-weight-bold text-primary">DataTables JobsFinder</h6>
     </div>
     <div class="card-body">
         <div class="table-responsive">

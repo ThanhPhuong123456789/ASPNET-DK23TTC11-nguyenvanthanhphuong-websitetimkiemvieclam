@@ -4,7 +4,7 @@
     var session = (JobsFinder_Main.Common.UserLogin)Session[JobsFinder_Main.Common.CommonConstants.USER_SESSION];
 }
 
-@if (session != null)
+@if (Model != null && session != null)
 {
     <div id="formSanPham@(Model.ID)" class="p-4 form-profile">
         @using (Html.BeginForm("Update", "SanPham", FormMethod.Post))

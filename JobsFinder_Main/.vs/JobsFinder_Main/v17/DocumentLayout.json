@@ -1,21 +1,155 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\\JobsFinder_Main\\",
+  "WorkspaceRootPath": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-webfindjob\\jobsfinder_main\\areas\\admin\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:areas\\admin\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\views\\sanpham\\deleteconfirm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:views\\sanpham\\deleteconfirm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-webfindjob\\jobsfinder_main\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\views\\sanpham\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:views\\sanpham\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C1A5FE7-0DFD-49FE-9466-E8C6BAB92152}|..\\Model\\Model.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-webfindjob\\model\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\assets\\admin\\vendor\\fontawesome-free\\css\\all.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:assets\\admin\\vendor\\fontawesome-free\\css\\all.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-webfindjob\\jobsfinder_main\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\views\\blog\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:views\\blog\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\assets\\client\\blog\\plugins\\themify-icons\\themify-icons.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:assets\\client\\blog\\plugins\\themify-icons\\themify-icons.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\views\\shared\\_layout_manager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:views\\shared\\_layout_manager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\views\\shared\\_navbarpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:views\\shared\\_navbarpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\assets\\admin\\js\\plugins\\ckfinder\\help\\en\\files\\010.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:assets\\admin\\js\\plugins\\ckfinder\\help\\en\\files\\010.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\assets\\admin\\js\\plugins\\ckeditor\\plugins\\exportpdf\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:assets\\admin\\js\\plugins\\ckeditor\\plugins\\exportpdf\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\assets\\admin\\js\\plugins\\ckeditor\\license.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:assets\\admin\\js\\plugins\\ckeditor\\license.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\assets\\admin\\js\\demo\\chart-pie-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:assets\\admin\\js\\demo\\chart-pie-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\assets\\admin\\js\\demo\\chart-bar-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:assets\\admin\\js\\demo\\chart-bar-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\assets\\admin\\js\\demo\\chart-area-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:assets\\admin\\js\\demo\\chart-area-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\areas\\admin\\views\\jobcategory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:areas\\admin\\views\\jobcategory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\areas\\admin\\views\\job\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:areas\\admin\\views\\job\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\areas\\admin\\views\\company\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:areas\\admin\\views\\company\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\areas\\admin\\views\\career\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:areas\\admin\\views\\career\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\areas\\admin\\views\\blogcategory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:areas\\admin\\views\\blogcategory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\areas\\admin\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:areas\\admin\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|JobsFinder_Main||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\assets\\admin\\vendor\\fontawesome-free\\css\\all.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:assets\\admin\\vendor\\fontawesome-free\\css\\all.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\assets\\admin\\js\\plugins\\ckfinder\\plugins\\gallery\\colorbox\\jquery.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:assets\\admin\\js\\plugins\\ckfinder\\plugins\\gallery\\colorbox\\jquery.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\assets\\admin\\js\\plugins\\ckeditor\\samples\\img\\logo.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:assets\\admin\\js\\plugins\\ckeditor\\samples\\img\\logo.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\views\\shared\\_layout_profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:views\\shared\\_layout_profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\areas\\admin\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:areas\\admin\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:Views\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|solutionrelative:Areas\\Admin\\Views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C1A5FE7-0DFD-49FE-9466-E8C6BAB92152}|..\\Model\\Model.csproj|D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\Model\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27AB1F6-7DF8-4D77-974B-18352E5E8791}|JobsFinder_Main.csproj|d:\\dhtv\\asp-new\\aspnet-dk23ttc11-nguyenvanthanhphuong-websitetimkiemvieclam\\jobsfinder_main\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|909d16b3-c8e8-43d1-a2b8-26ea0d4b6b57"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,59 +159,476 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.config",
-              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\\Model\\App.config",
-              "RelativeDocumentMoniker": "..\\Model\\App.config",
-              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\\Model\\App.config",
-              "RelativeToolTip": "..\\Model\\App.config",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC8AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-10-15T16:31:46.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Web.config",
-              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\\JobsFinder_Main\\Views\\Web.config",
-              "RelativeDocumentMoniker": "Views\\Web.config",
-              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\\JobsFinder_Main\\Views\\Web.config",
-              "RelativeToolTip": "Views\\Web.config",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-10-15T16:15:07.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "web.config",
-              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\\JobsFinder_Main\\Areas\\Admin\\Views\\web.config",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\web.config",
-              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\\JobsFinder_Main\\Areas\\Admin\\Views\\web.config",
-              "RelativeToolTip": "Areas\\Admin\\Views\\web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-10-15T16:14:39.174Z",
+              "Title": "DeleteConfirm.cshtml",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\SanPham\\DeleteConfirm.cshtml",
+              "RelativeDocumentMoniker": "Views\\SanPham\\DeleteConfirm.cshtml",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\SanPham\\DeleteConfirm.cshtml",
+              "RelativeToolTip": "Views\\SanPham\\DeleteConfirm.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T20:06:09.419Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Web.config",
-              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\\JobsFinder_Main\\Web.config",
-              "RelativeDocumentMoniker": "Web.config",
-              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-WEBfindjob\\JobsFinder_Main\\Web.config",
-              "RelativeToolTip": "Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-10-15T16:10:19.045Z",
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\SanPham\\Update.cshtml",
+              "RelativeDocumentMoniker": "Views\\SanPham\\Update.cshtml",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\SanPham\\Update.cshtml",
+              "RelativeToolTip": "Views\\SanPham\\Update.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T19:51:14.285Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAP4AAAAAAAAAAAAlwAMBAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T19:15:19.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\Blog\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Blog\\Index.cshtml",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\Blog\\Index.cshtml",
+              "RelativeToolTip": "Views\\Blog\\Index.cshtml",
+              "ViewState": "AgIAACcCAAAAAAAAAAAlwCwCAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T19:13:54.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\Blog\\Detail.cshtml",
+              "RelativeDocumentMoniker": "Views\\Blog\\Detail.cshtml",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\Blog\\Detail.cshtml",
+              "RelativeToolTip": "Views\\Blog\\Detail.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAlwBsAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T19:13:28.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "themify-icons.css",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Client\\Blog\\plugins\\themify-icons\\themify-icons.css",
+              "RelativeDocumentMoniker": "Assets\\Client\\Blog\\plugins\\themify-icons\\themify-icons.css",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Client\\Blog\\plugins\\themify-icons\\themify-icons.css",
+              "RelativeToolTip": "Assets\\Client\\Blog\\plugins\\themify-icons\\themify-icons.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAC9GwAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-18T19:13:23.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAASwEAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T18:56:27.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_NavBarPartial.cshtml",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\Shared\\_NavBarPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_NavBarPartial.cshtml",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\Shared\\_NavBarPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_NavBarPartial.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAlwBMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T18:50:42.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "README.md",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\js\\plugins\\ckeditor\\plugins\\exportpdf\\README.md",
+              "RelativeDocumentMoniker": "Assets\\Admin\\js\\plugins\\ckeditor\\plugins\\exportpdf\\README.md",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\js\\plugins\\ckeditor\\plugins\\exportpdf\\README.md",
+              "RelativeToolTip": "Assets\\Admin\\js\\plugins\\ckeditor\\plugins\\exportpdf\\README.md",
+              "ViewState": "AgIAADsAAAAAAAAAAAAkwD8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-10-18T18:23:20.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "all.min.css",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\vendor\\fontawesome-free\\css\\all.min.css",
+              "RelativeDocumentMoniker": "Assets\\Admin\\vendor\\fontawesome-free\\css\\all.min.css",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\vendor\\fontawesome-free\\css\\all.min.css",
+              "RelativeToolTip": "Assets\\Admin\\vendor\\fontawesome-free\\css\\all.min.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAADHBwAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-18T14:39:34.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LICENSE.md",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\js\\plugins\\ckeditor\\LICENSE.md",
+              "RelativeDocumentMoniker": "Assets\\Admin\\js\\plugins\\ckeditor\\LICENSE.md",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\js\\plugins\\ckeditor\\LICENSE.md",
+              "RelativeToolTip": "Assets\\Admin\\js\\plugins\\ckeditor\\LICENSE.md",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAkwGgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-10-18T18:23:12.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "chart-pie-demo.js",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\js\\demo\\chart-pie-demo.js",
+              "RelativeDocumentMoniker": "Assets\\Admin\\js\\demo\\chart-pie-demo.js",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\js\\demo\\chart-pie-demo.js",
+              "RelativeToolTip": "Assets\\Admin\\js\\demo\\chart-pie-demo.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-18T18:23:00.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "chart-bar-demo.js",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\js\\demo\\chart-bar-demo.js",
+              "RelativeDocumentMoniker": "Assets\\Admin\\js\\demo\\chart-bar-demo.js",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\js\\demo\\chart-bar-demo.js",
+              "RelativeToolTip": "Assets\\Admin\\js\\demo\\chart-bar-demo.js",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwB0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-18T18:22:54.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout_Manager.cshtml",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\Shared\\_Layout_Manager.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout_Manager.cshtml",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\Shared\\_Layout_Manager.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout_Manager.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAlwEUAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T12:22:59.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "010.html",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\js\\plugins\\ckfinder\\help\\en\\files\\010.html",
+              "RelativeDocumentMoniker": "Assets\\Admin\\js\\plugins\\ckfinder\\help\\en\\files\\010.html",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\js\\plugins\\ckfinder\\help\\en\\files\\010.html",
+              "RelativeToolTip": "Assets\\Admin\\js\\plugins\\ckfinder\\help\\en\\files\\010.html",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwBwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-18T18:23:29.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "chart-area-demo.js",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\js\\demo\\chart-area-demo.js",
+              "RelativeDocumentMoniker": "Assets\\Admin\\js\\demo\\chart-area-demo.js",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\js\\demo\\chart-area-demo.js",
+              "RelativeToolTip": "Assets\\Admin\\js\\demo\\chart-area-demo.js",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwB0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-18T18:22:44.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\User\\Index.cshtml",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\User\\Index.cshtml",
+              "ViewState": "AgIAACgAAAAAAAAAAAAuwC8AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T18:22:25.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\JobCategory\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\JobCategory\\Index.cshtml",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\JobCategory\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\JobCategory\\Index.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAuwCsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T18:22:03.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\Job\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Job\\Index.cshtml",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\Job\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Job\\Index.cshtml",
+              "ViewState": "AgIAACsAAAAAAAAAAAApwC4AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T18:21:56.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\Company\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Company\\Index.cshtml",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\Company\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Company\\Index.cshtml",
+              "ViewState": "AgIAACsAAAAAAAAAAAApwC4AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T18:21:49.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\Career\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Career\\Index.cshtml",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\Career\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Career\\Index.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAApwCoAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T18:21:42.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\BlogCategory\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\BlogCategory\\Index.cshtml",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\BlogCategory\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\BlogCategory\\Index.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAApwC8AAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T18:21:33.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\Blog\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Blog\\Index.cshtml",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\Blog\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Blog\\Index.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAApwDAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T18:21:05.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABQBAAAAAAAAAAAuwBkBAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T18:08:54.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "JobsFinder_Main",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\JobsFinder_Main.csproj",
+              "RelativeDocumentMoniker": "JobsFinder_Main.csproj",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\JobsFinder_Main.csproj",
+              "RelativeToolTip": "JobsFinder_Main.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-18T18:00:45.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "all.css",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\vendor\\fontawesome-free\\css\\all.css",
+              "RelativeDocumentMoniker": "Assets\\Admin\\vendor\\fontawesome-free\\css\\all.css",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\vendor\\fontawesome-free\\css\\all.css",
+              "RelativeToolTip": "Assets\\Admin\\vendor\\fontawesome-free\\css\\all.css",
+              "ViewState": "AgIAAGgAAAAAAAAAAIAwwIkAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-18T14:39:32.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "jquery.min.js",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\js\\plugins\\ckfinder\\plugins\\gallery\\colorbox\\jquery.min.js",
+              "RelativeDocumentMoniker": "Assets\\Admin\\js\\plugins\\ckfinder\\plugins\\gallery\\colorbox\\jquery.min.js",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\js\\plugins\\ckfinder\\plugins\\gallery\\colorbox\\jquery.min.js",
+              "RelativeToolTip": "Assets\\Admin\\js\\plugins\\ckfinder\\plugins\\gallery\\colorbox\\jquery.min.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAADbMAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-18T14:39:28.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "logo.svg",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\js\\plugins\\ckeditor\\samples\\img\\logo.svg",
+              "RelativeDocumentMoniker": "Assets\\Admin\\js\\plugins\\ckeditor\\samples\\img\\logo.svg",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Assets\\Admin\\js\\plugins\\ckeditor\\samples\\img\\logo.svg",
+              "RelativeToolTip": "Assets\\Admin\\js\\plugins\\ckeditor\\samples\\img\\logo.svg",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAMAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAWiSURBVEhLnVZZbxNXGD13Ntvj8YxxnMRxEhxKw5KQBAgUaAUVBSRU1JYHWtFKRfSpL12eKlWVyvI72jfUhyKh9qFN1UAoVEqEiqAECoXgpMSGQBZvY8fjsT0z/cZOWEJUiR7p052x537nu\u002Bee\u002B80wLMGxY8c\u002BdRznk4XbFwJj7BoN52j84eSJE26O40LtnyVQFIXv6\u002BsL\u002BP1\u002BfuGn/4RhGHY8Hi9ms9koXW8iguTLd\u002B\u002BOxTs7Ty5HUFXVgLV16xY1FGrw0i1g5wHHoNGE47j3Dt1zACcDvAp93qoUi0VLEISVpmkquVyu\u002BP6pU79yHDewHIHO88IjxrgoZYJjZ4HyEFAahVMah12apajAsRTAswlcaD\u002BR9DF3tf39/WowGNQGBgb2TE9PO7Zty89IQNpz50f/3igGxK1aWI/AuizBHCQNhlDQk0jpHLJ2FyXuhiRGUJ67CSa1wJG77EwmUyE4\u002BXzenpycBK3EQymbHxMcP31a\u002BuXObCToT7/qk9PbPdK1Br5yTmDGeRTmZ5DMhhDPbUYCh\u002BAoeyH7OmAnByD42sCt6HcMo2Sn0\u002Bnq1NRU2SIi23E0ImyvEVDlbCCebdZNdrQ7cunA5uiF7o7ANclvzbFcoQEj6UO4kNqDi3M9GHngw2yBJpl5NJg34Q\u002Btg9iwkSmBgBDUNG\u002B4ISy3trUptmU5MzMzpRrBzLo32mVxdkdbcOK99aEr3asDt1Sp4mGcsIWWfwCW5zUU0YG0qWJSd5ApWShVLKxURWjhdfBp7Yw2mJNEkfP5fLymaXwqnS4lEgmDc6v3Cbk1ipjZ1xm83tPivRdWYYCzN4CX34EW\u002BQC9sT5sb29Bf0RBsyIiVbJxNSUgzm1DRnjJlaAWoii6FoeqaSAit3aQ1y7wrcGHa1uU5Ot92sVAuPrAMfTVjr/lKALhXVAkP1SvhK6IjL2dGl7vCKAj5KUSBPwxK\u002BEfna\u002B7lggW42kIjnNf3tF8tlG0s61\u002BKy09MNay2/o\u002BJ2tEYNIZsOzUwqMMRtXGWLqMXMVGxWFI6DbStBpKX3/ExbP5qYzCmdYN2qXGSrnqny\u002BE2I38Dgyld2NsnEEvpUF7VX\u002BSY2Bu8BydDgaemkyx4sCsLmak0b1c0nw4FH47INm5NeWqzK4WDmI0s9me1kVLFUUnSnq30UbWQhEQpWPTJDHIjg3Jok1WeIS83II09fx0Vc\u002B8AGYlhB8zenD1ZH5N50\u002Bpj6U7c63Fctlj7u1ZpapeUbAtV4I63Mmu3gZVTUZHlAjWNvqwyu0oC09QH4IgSBgeHk4NDg6mWDWO8fuZVdbl6V3CGf1IdCYjldolZ/6LN3sbV4Z8osBoEk2tEFGJ9kA3SX\u002BSjdwBjaqXRQ4egVZRI6h1VHLTEwLBMhDKl\u002BWR4dT2\u002BL2icrhYFRockZd/v1cQtpDGsaAIgSY9ypdxa8bA2fE8HubK8AsMb6/X0N\u002BuIEauqrvnue5Pdi/B8Du5sUclbahYxFC5ikTWZOLFxDz7/q8Mvr2SwjcU393I4ud4HqPTJeTooCkSh6YA\u002Bd7DP2VNd1yMOvgvP8Rhr6mPhjKTd1J5r49nThO1yrY5U2B3M1U2Om3gOkWc7DlnWJDIRd1NXuyMKdgWUxGSn23IrkQ8zyOZTBrj4\u002BOGYJUxYmXR0yf\u002BuT8WiAuJciw4wfXrY6GP1CkrzKepNXM0SaOKI\u002BSk9ZR8Q5MPnWEvArQHNVDBdCxqWCoSy5/D7koa0UoBLVUDlduF3s6UunNT4JXPeotCUMmb1dokH2mukRyRgIAmsm/QS9LUcxAWs7su4iBJEkaGR\u002Bouqv/zBCe//uqtjljsyMF3D\u002B/x\u002B\u002BUV1Sq9wRbxJONjLP2Jo8P4tIsW1vgENvgWo2x1US/3cRxfq\u002BZFwk3u7sMinluB\u002B1VBr7/PX\u002BSlvxwmJiYM90NgWQKy3f/6bHkewL/xPpsTgHY1JwAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-10-18T14:39:24.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_Layout_Profile.cshtml",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\Shared\\_Layout_Profile.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout_Profile.cshtml",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\Shared\\_Layout_Profile.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout_Profile.cshtml",
+              "ViewState": "AgIAAJMCAAAAAAAAAAAswKACAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T12:23:06.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAADwv1gAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T12:22:17.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwFIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T17:49:58.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T17:49:48.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "_Sidebar.cshtml",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\Shared\\_Sidebar.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Sidebar.cshtml",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\Shared\\_Sidebar.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Sidebar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-15T17:47:11.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAALsAAACXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-15T17:15:24.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\Web.config",
+              "RelativeDocumentMoniker": "Views\\Web.config",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Views\\Web.config",
+              "RelativeToolTip": "Views\\Web.config",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-15T16:15:07.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "web.config",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\web.config",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\web.config",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\JobsFinder_Main\\Areas\\Admin\\Views\\web.config",
+              "RelativeToolTip": "Areas\\Admin\\Views\\web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-15T17:15:12.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\Model\\App.config",
+              "RelativeDocumentMoniker": "..\\Model\\App.config",
+              "ToolTip": "D:\\DHTV\\ASP-new\\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\\Model\\App.config",
+              "RelativeToolTip": "..\\Model\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-15T17:13:46.761Z"
             }
           ]
         }

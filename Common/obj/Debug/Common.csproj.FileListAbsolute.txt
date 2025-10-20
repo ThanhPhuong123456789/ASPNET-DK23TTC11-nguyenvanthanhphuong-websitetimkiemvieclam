@@ -22,3 +22,9 @@ C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\Common\obj\Debug\Common.
 C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\Common\obj\Debug\Common.dll
 C:\Users\ICT\Downloads\JobsFinder\JobsFinder\JobsFinder\Common\obj\Debug\Common.pdb
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\Common\bin\Debug\Common.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\Common\bin\Debug\Common.pdb
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\Common\obj\Debug\Common.dll
+D:\DHTV\ASP-new\ASPNET-DK23TTC11-nguyenvanthanhphuong-websitetimkiemvieclam\Common\obj\Debug\Common.pdb
