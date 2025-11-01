@@ -1,0 +1,6 @@
+File update tiến độ
+Nội dung tiến độ:
+- Tuần 1: Học và xem các tài liệu liên quan đến ASP và SqlServer.
+- Tuần 2: Khởi tạo code CRUD cơ bản và dựng SqlServer.
+- Tuần 3: Hoàn thiện dần các chức năng cho ứng dụng(Đăng nhập, đăng xuất, các chức năng quản lý job,...).
+- Tuần 4: Kiểm tra và fix các lỗi liên quan đến user khi login và tạo các data test.
